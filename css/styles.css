@@ -1,0 +1,15 @@
+
+/** Body **/
+
+body {
+  background: url('../images/homepage_background.jpg') no-repeat;
+}
+
+.inputbox {
+  color: red;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+/** END Body **/
