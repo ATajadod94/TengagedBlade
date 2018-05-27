@@ -10,6 +10,7 @@ body{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
   margin: 0 auto;
         position:relative;
 }
@@ -24,4 +25,6 @@ body{
 .mybtn {
   margin-top:70px;
 }
+
+
 /** END Body **/

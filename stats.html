@@ -1,84 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Using CSS Grid</title>
-	<style>
-		body{
-			color: #fff;
-			font-family: 'Nunito Semibold';
-			text-align: center;
-		}
-        #content{
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-auto-rows: minmax(100px, auto);
-            grid-gap: 10px;
-            max-width: 960px;
-            margin: 0 auto;
-            grid-template-areas:
-                "header header header header"
-                "footer footer footer footer"
-                "main main main main"
-                "main main main main"
-                "aside aside nav nav"
-                "section section section section"
-                "section section section section";
-        }
-        /* desktop grid */
-        @media screen and (min-width: 760px){
-    		#content{
-    			display: grid;
-    			grid-template-columns: repeat(4, 1fr);
-    			grid-auto-rows: minmax(100px, auto);
-    			grid-gap: 10px;
-    			max-width: 960px;
-    			margin: 0 auto;
-                grid-template-areas:
-                    "header header header header"
-                    "aside main main main"
-                    "nav main main main"
-                    "section section section section"
-                    "section section section section"
-                    "footer footer footer footer";
-    		}
-        }
-		#content > *{
-			background: #3bbced;
-			padding: 30px;
-		}
-        header{
-            grid-area: header;
-        }
-        main{
-            grid-area: main;
-        }
-        aside{
-            grid-area: aside;
-        }
-        nav{
-            grid-area: nav;
-        }
-        section{
-            grid-area: section;
-        }
-        footer{
-            grid-area: footer;
-            background: #333 !important;
-        }
-	</style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tengaged Blaze</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/statsstyles.css">
+	<script src="script.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
 
 	<div id="content">
 
-		<header>Header</header>
-        <main>Main</main>
-        <section>Section</section>
-        <aside>Aside</aside>
-        <nav>Nav</nav>
-        <footer>Footer</footer>
+		<header>AK 73</header>
+    <main>
+			<canvas id="pieChart"></canvas>
+		</main>
 
+		<section>
+			<div class="nested">
+			    	<games> Games :
+							<div>Karma: <span>5599</span>
+									<span id="remark"> 155 <span>th</span></span>
+							</div>
+							<div>Played:
+									<span id="remark"> 45
+							</div>
+						</games>
+
+						<blogs> Blogs:
+								<div>Karma: <span>5599</span>
+												<span id="remark"> 155 <span>th</span></span>
+										</div>
+										<div>Played:
+												<span id="remark"> 45
+										</div>
+						</blogs>
+
+						<friends> Friends :
+							<div>Karma: <span>5599</span>
+									<span id="remark"> 155 <span>th</span></span>
+							</div>
+							<div>Played:
+									<span id="remark"> 45
+							</div>
+						</friends>
+			</div>
+
+    </section>
+
+    <aside><img src="Images/ak73.jpg"></aside>
+    <nav>
+				<div>Karma: <span>5599</span>
+						<span id="remark"> 155 <span>th</span></span>
+				</div>
+				<div>Played:
+						<span id="remark"> 45
+				</div>
+		</nav>
+		<footer>Created and Designed by Alireza Tajadod</footer>
 	</div>
-
 </body>
 </html>
