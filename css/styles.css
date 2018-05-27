@@ -1,15 +1,27 @@
 
 /** Body **/
-
-body {
+body{
   background: url('../images/homepage_background.jpg') no-repeat;
+  color: #fff;
+  font-family: 'Nunito Semibold';
+  text-align: center;
+}
+#content{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 0 auto;
+        position:relative;
+}
+#content > *{
+  padding: 30px;
 }
 
-.inputbox {
-  color: red;
-  position: absolute;
-  top: 40%;
-  left: 40%;
+#inputbox {
+  grid-column: 2/ 4;
 }
 
+.mybtn {
+  margin-top:70px;
+}
 /** END Body **/
