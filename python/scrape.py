@@ -20,13 +20,14 @@ def download(url, user_agent='wswp', num_retries=2):
                 # retry 5XX HTTP errors
                 return download(url, user_agent, num_retries - 1)
     return html
-def gameplot(user = 'ak73'):
+
+def gameplot(user = 'alireza1373'):
     html = download('https://tengaged.com/user/' + user)
     karma, rank = re.findall('<span class="remark">(.*?)</span>', html)[0:2]
 
     soup = BeautifulSoup(html, 'html.parser')
     karma = soup.find(attrs={'class': 'remark'}).text
-    rank = soup.find(attrs={'class': 'miniadrank'}).text
+ #  rank = soup.find(attrs={'class': 'miniadrank'}).text
     games_played_default = soup.findAll(attrs={'class': 'remark'})[1].text;
     game_pages = int(soup.findAll(attrs={'class': 'page'})[3].text);
     last_activity = soup.findAll(attrs={'class': 'remark'})[2].text;
@@ -64,11 +65,80 @@ def gameplot(user = 'ak73'):
                 allgames = allgames.append({'type': 'stars', 'placing': int(placing)}, ignore_index=True)
 
     realgames = allgames.__len__()
-    lm = sns.swarmplot(allgames.type, allgames.placing.astype(int), order = ['casting','fasting','rookies','frooks', 'survivor', 'hunger']).set_title(user)
+    lm = sns.swarmplot(allgames.type, allgames.placing.astype(int), order = ['casting','fasting','rookies','frooks', 'survivor', 'hunger','stars']).set_title(user)
     axes = lm.axes
     axes.set_yticks(range(1, 31))
     #plt.savefig(lm, format=format)
     plt.savefig('game_data/' + user)
     #plt.show()
 
-gameplot('ak73')
+
+def blogplot(user = 'ak73'):
+    html = download('https://tengaged.com/blog/' + user)
+    blogs_text = re.findall('<span class="info">(.*?)</span>', html)
+    numblogs = filter(str.isdigit, blogs_text.__str__())
+    soup = BeautifulSoup(html, 'html.parser')
+    num_pages =  (int(numblogs) / 6) + 1
+    page_blogs = soup.find(attrs={'class': 'blogPosts'})
+    comments_db = pd.DataFrame(columns=['user', 'num_comments'])
+    top_blog = 0
+
+    blogs = page_blogs.findAll('a')
+
+    for blog in blogs:
+        if blog.has_attr('rel') and blog.attrs['rel'] and blog.attrs['rel'][0].startswith('bookmark'):
+            blog_link = 'https://tengaged.com' + blog.attrs['href'].__str__()
+            blog_html = download(blog_link)
+            soup = BeautifulSoup(blog_html)
+
+            if re.findall('<span class="floated miniadrank">(.*?)</span>', blog_html):
+                top_blog += 1
+
+            comments = soup.findAll(attrs={'blogPostComments'})
+
+            for comment in comments:
+                tail = comment.find(attrs={'class': 'tail'})
+                cuser = tail.find('a').text.__str__()
+                if cuser in list(comments_db.user):
+                    index = comments_db.user[(comments_db.user == cuser)].index[0]
+                    current_count =comments_db.iloc[index].num_comments
+                    comments_db.set_value(index, 'num_comments', current_count+1)
+                else:
+                    comments_db = comments_db.append({'user': cuser, 'num_comments': 1}, ignore_index=True)
+
+    for i in range(2,min(num_pages+1, 20)):
+            link = 'https://tengaged.com/blog/' + user + '/page/' + str(i)
+            html = download(link)
+            soup = BeautifulSoup(html)
+
+            page_blogs = soup.find(attrs={'class': 'blogPosts'})
+            blogs = page_blogs.findAll('a')
+
+            for blog in blogs:
+                if blog.has_attr('rel') and blog.attrs['rel'] and blog.attrs['rel'][0].startswith('bookmark'):
+                    blog_link = 'https://tengaged.com' + blog.attrs['href'].__str__()
+                    blog_html = download(blog_link)
+                    soup = BeautifulSoup(blog_html)
+
+                    if re.findall('<span class="floated miniadrank">(.*?)</span>', blog_html):
+                        top_blog += 1
+
+                    comments = soup.findAll(attrs={'blogPostComments'})
+
+                    for comment in comments:
+                        tail = comment.find(attrs={'class': 'tail'})
+                        cuser = tail.find('a').text.__str__()
+                        if cuser in list(comments_db.user):
+                            index = comments_db.user[(comments_db.user == cuser)].index[0]
+                            current_count = comments_db.iloc[index].num_comments
+                            comments_db.set_value(index, 'num_comments', current_count + 1)
+                        else:
+                            comments_db = comments_db.append({'user': cuser, 'num_comments': 1}, ignore_index=True)
+    comments_db.num_comments = comments_db.num_comments.astype(int)
+    top10 = (comments_db.nlargest(10, 'num_comments'))
+    top_blog_percentage = 100 * (float(top_blog) / (i*6))
+    a = sns.barplot(top10.user, top10.num_comments).set_title(user + '   top blog percentage:    '  + str(top_blog_percentage))
+    plt.savefig('blog_data/' + user)
+
+gameplot('Philip13')
+#logplot('bengalboy')
