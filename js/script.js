@@ -10,11 +10,12 @@ var insertHtml = function (selector, html) {
   targetElem.innerHTML = html;
 };
 
-var insertCSS = function (selector, css) {
-  var targetElem = document.querySelector(selector);
-  targetElem.id = css;
-};
-
+var insertProperty = function (string, propName, propValue) {
+    var propToReplace = "{{" + propName + "}}";
+        string = string
+          .replace(new RegExp(propToReplace, "g"), propValue);
+        return string;
+      };
 // Show loading icon inside element identified by 'selector'.
 var showLoading = function (selector) {
   var html = "<div class='text-center'>";
@@ -25,10 +26,22 @@ var showLoading = function (selector) {
 // On page load (before images or CSS)
 $('button').bind("click",function(event) {
 // On first load, show home view
+var User = $('#inputbox input').val();
 showLoading("#content");
 $ajaxUtils.sendGetRequest(
   statshtml,
   function (responseText) {
+    $.ajax({
+     type:'get',
+     url:'python2.7 var/www/cgi-bin/scrape.py',
+     success: function(response) {
+       console.log(JSON.stringify(response))
+     },
+     error: function(request, status, error) {
+       console.log("Error: " + error)
+     }
+  });
+    responseText =  insertProperty(responseText, "User", User);
     document.querySelector('#content')
         .id = 'stats_content'
         document.querySelector('#stats_content')
