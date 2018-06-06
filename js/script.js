@@ -31,16 +31,6 @@ showLoading("#content");
 $ajaxUtils.sendGetRequest(
   statshtml,
   function (responseText) {
-    $.ajax({
-     type:'get',
-     url:'python2.7 var/www/cgi-bin/scrape.py',
-     success: function(response) {
-       console.log(JSON.stringify(response))
-     },
-     error: function(request, status, error) {
-       console.log("Error: " + error)
-     }
-  });
     responseText =  insertProperty(responseText, "User", User);
     document.querySelector('#content')
         .id = 'stats_content'
