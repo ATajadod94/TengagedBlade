@@ -38,7 +38,7 @@ def gameplot(user='alireza1373'):
 
     for i in range(1, game_pages + 1):
         html = download(
-            'http://tengaged.com/user/' + user + '/post/search.json?action=loadGames&p=' + str(i) + '&uid=' + user)
+            'http://tengaged.com/user/' + user + '/post/search.json?action=losdadaadGames&p=' + str(i) + '&uid=' + user)
         soup = BeautifulSoup(html, 'html.parser')
         games_in_page = soup.findAll(attrs={'class': 'game'})
         for agame in games_in_page:
@@ -178,5 +178,5 @@ def giftplot(user='ak73'):
     plt.savefig('gift_data/' + user)
 
 #gameplot('Arris')
-blogplot('lemonface')
+blogplot('KatarinaDuCouteau')
 #giftplot('lemonface')

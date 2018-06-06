@@ -1,30 +1,109 @@
-
-/** Body **/
 body{
-  background: url('../Images/homepage_background.jpg') no-repeat;
-  color: #fff;
-  font-family: 'Nunito Semibold';
-  text-align: center;
-}
+    font-family: 'Nunito Semibold';
+    text-align: center;
+    background: url('../Images/homepage_background2.jpg') no-repeat;
+
+  }
+
 #content{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 10px;
-  margin: 0 auto;
-        position:relative;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-auto-rows: minmax(100px, auto);
+          grid-gap: 10px;
+          max-width: 960px;
+          margin: 0 auto;
+          grid-template-areas:
+              "header header header header"
+              "main main main main"
+              "main main main main"
+              "footer footer footer footer"
 }
+
+#leftimage{
+  position: absolute;
+    left: 5px;
+    top: 10px;
+}
+#rightimage {
+  position: absolute;
+    right: 5px;
+    top: 10px;
+
+}
+#remark {
+  color:#424242;
+  font-weight:bold;
+  background-color:#eee;
+  padding-left:2px;
+  padding-right:2px;
+}
+
+.jumbotron {
+  position: relative;
+}
+
+
 #content > *{
-  padding: 30px;
-}
+    padding: 30px;
 
-#inputbox {
-  grid-column: 2/ 4;
-}
+  }
+      header{
+          grid-area: header;
+      }
+      main{
+          grid-area: main;
+      }
+      aside{
+          grid-area: aside;
 
-.mybtn {
-  margin-top:70px;
-}
+      }
+      nav{
+          grid-area: nav;
 
+      }
+      section{
+          grid-area: section;
+      }
+      footer{
+          grid-area: footer;
+          background: #800000 !important;
+      }
 
-/** END Body **/
+#stats_content > *{
+          padding: 30px;
+          background: #3bbced;
+
+        }
+
+/* desktop grid */
+@media screen and (min-width: 760px){
+  #content{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 10px;
+        max-width: 2048px;
+        margin: 0 auto;
+              grid-template-areas:
+                  "header header header header"
+                  "main main main main"
+                  "main main main main"
+                  "footer footer footer footer";
+      }
+  #stats_content{
+              display: grid;
+              grid-template-columns: repeat(4, 1fr);
+              grid-auto-rows: minmax(100px, auto);
+              grid-gap: 10px;
+              max-width: 2048px;
+              margin: 0 auto;
+                    grid-template-areas:
+                        "header header header header"
+                        "aside main main main"
+                        "nav main main main"
+                        "section section section section"
+                        "section section section section"
+                        "footer footer footer footer";
+            }
+        }
+  }
