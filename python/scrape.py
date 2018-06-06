@@ -182,8 +182,8 @@ def giftplot(user='ak73'):
     b.set_xticklabels(b.get_xticklabels(), rotation=40, ha="right")
     plt.savefig('gift_data/' + user)
 
-    gameplot('violets')
-    blogplot('violets')
+gameplot('violets')
+blogplot('violets')
 #if __name__ == '__main__':
 #        cgitb.enable()
 #        user = cgi.FieldStorage()
