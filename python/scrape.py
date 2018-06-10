@@ -43,7 +43,7 @@ def gameplot(user='alireza1373'):
 
     for i in range(1, game_pages + 1):
         html = download(
-            'http://tengaged.com/user/' + user + '/post/search.json?action=losdadaadGames&p=' + str(i) + '&uid=' + user)
+            'http://tengaged.com/user/' + user + '/ajax/search.json?action=loadGames&p=' + str(i) + '&uid=' + user)
         soup = BeautifulSoup(html, 'html.parser')
         games_in_page = soup.findAll(attrs={'class': 'game'})
         for agame in games_in_page:
@@ -182,8 +182,7 @@ def giftplot(user='ak73'):
     b.set_xticklabels(b.get_xticklabels(), rotation=40, ha="right")
     plt.savefig('gift_data/' + user)
 
-gameplot('suzycroatia')
-blogplot('suzycroatia')
+gameplot('violets')
 #if __name__ == '__main__':
 #        cgitb.enable()
 #        user = cgi.FieldStorage()
