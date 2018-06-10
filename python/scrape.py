@@ -9,11 +9,10 @@ import pandas as pd
 import seaborn as sns
 import numpy as np
 import matplotlib.pyplot as plt
-import cgitb, cgi
+import requests
 
 
 def download(url, user_agent='wswp', num_retries=2):
-    print 'Downloading:', url
     headers = {'User-agent': user_agent}
     request = urllib2.Request(url, headers=headers)
     try:
@@ -44,6 +43,8 @@ def gameplot(user='alireza1373'):
     for i in range(1, game_pages + 1):
         html = download(
             'http://tengaged.com/user/' + user + '/ajax/search.json?action=loadGames&p=' + str(i) + '&uid=' + user)
+        #html = requests.post('https://tengaged.com/' + user, {'action': 'loadGames', 'p': i, '&uid=:':user })
+
         soup = BeautifulSoup(html, 'html.parser')
         games_in_page = soup.findAll(attrs={'class': 'game'})
         for agame in games_in_page:
@@ -161,13 +162,15 @@ def giftplot(user='ak73'):
     gifts_db = pd.DataFrame(columns=['user', 'num_gifts'])
 
     for i in range(1, int(num_pages) + 1):
-        html = download(
-            'http://tengaged.com/gifts/' + user + '/ajax/search.json?action=loadGifts&p=2')
-        soup = BeautifulSoup(html, 'html.parser')
+        html = requests.post('https://tengaged.com/gifts/' + user, {'action': 'loadGifts', 'p': i})
+        soup = BeautifulSoup(html.text, 'html.parser')
         gifts = soup.findAll(attrs={'class': 'gifts imgMsgList big'})[0]
         gifters = gifts.findAll(attrs={'class': 'message'})
         for gifter in gifters:
-            cuser = gifter.find_all('a')[0].text.__str__()
+            try:
+                cuser = gifter.find_all('a')[0].text.__str__()
+            except:
+                continue
             if cuser in list(gifts_db.user):
                 index = gifts_db.user[(gifts_db.user == cuser)].index[0]
                 current_count = gifts_db.iloc[index].num_gifts
@@ -182,11 +185,17 @@ def giftplot(user='ak73'):
     b.set_xticklabels(b.get_xticklabels(), rotation=40, ha="right")
     plt.savefig('gift_data/' + user)
 
-gameplot('violets')
+#blogplot('joe1110')
+#gameplot('joe1110')
 #if __name__ == '__main__':
 #        cgitb.enable()
 #        user = cgi.FieldStorage()
 #        cgitb.enable(display=0, logdir='python/')
 #        gameplot(user)
-#        blogplot(user)
-#giftplot('lemonface')
+
+
+giftplot('RobertGuajardo')
+
+
+
+
