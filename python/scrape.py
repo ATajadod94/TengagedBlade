@@ -194,7 +194,10 @@ def giftplot(user='ak73'):
 #        gameplot(user)
 
 
-giftplot('RobertGuajardo')
+giftplot('lazeric')
+gameplot('suzycroatia')
+
+
 
 
 
