@@ -10,6 +10,10 @@ import seaborn as sns
 import numpy as np
 import matplotlib.pyplot as plt
 import requests
+from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
+import os
+
+
 
 
 def download(url, user_agent='wswp', num_retries=2):
@@ -194,11 +198,34 @@ def giftplot(user='ak73'):
 #        gameplot(user)
 
 
-giftplot('lazeric')
-gameplot('suzycroatia')
+
+def run():
+    server_address = ('127.0.0.1', 80)
+    httpd = HTTPServer(server_address, ScrapeHTTPRequestHandler)
+    print('http server is running...')
+    httpd.serve_forever()
 
 
+# Create custom HTTPRequestHandler class
+class ScrapeHTTPRequestHandler(BaseHTTPRequestHandler):
+    # handle GET command
+    def do_GET(self):
+        rootdir = '/Users/Ali/Desktop/Personal_Projects/Tengaged/TengagedBlaze/python/scrape.py'  # file location
+        try:
+                user = self.path
+                gameplot(user)
+                giftplot(user)
+                blogplot(user)
+
+                # send code 200 response
+                self.send_response(200)
+
+                # send file content to client
+                return
+
+        except IOError:
+            self.send_error(404, 'file not found')
 
 
-
-
+if __name__ == '__main__':
+  run()

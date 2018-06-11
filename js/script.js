@@ -10,6 +10,8 @@ var insertHtml = function (selector, html) {
   targetElem.innerHTML = html;
 };
 
+
+
 var insertProperty = function (string, propName, propValue) {
     var propToReplace = "{{" + propName + "}}";
         string = string
