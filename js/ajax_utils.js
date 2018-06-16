@@ -58,6 +58,18 @@ function handleResponse(request,
   }
 }
 
+ajaxUtils.runPyScript =
+  function (input){
+      var jqXHR = $.ajax({
+          type: "GET",
+          url: "scrape.py",
+          async: true,
+          data: { mydata: input }
+      });
+
+      return jqXHR.responseText;
+  };
+
 
 // Expose utility to the global object
 global.$ajaxUtils = ajaxUtils;

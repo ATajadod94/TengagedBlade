@@ -197,9 +197,8 @@ def giftplot(user='ak73'):
 
 
 def run():
-    #server_address = ('127.0.0.1', 80)
-    server_address = ('getter')
-    httpd = HTTPServer(("", 80), ScrapeHTTPRequestHandler)
+    server_address = ('127.0.0.1', 80)
+    httpd = HTTPServer(server_address, ScrapeHTTPRequestHandler)
     print(httpd)
     print('http server is running...')
     httpd.serve_forever()
@@ -212,11 +211,9 @@ class ScrapeHTTPRequestHandler(BaseHTTPRequestHandler):
         rootdir = '/Users/Ali/Desktop/Personal_Projects/Tengaged/TengagedBlaze/python/scrape.py'  # file location
         try:
                 user = self.path.split('/?mydata=')[1]
-                print(user)
                 gameplot(user)
                 giftplot(user)
-                print('hi')
-                #blogplot(user)
+                blogplot(user)
                 # send code 200 response
                 self.send_response(200)
 
