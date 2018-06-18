@@ -1,3 +1,25 @@
+.emoji {
+	display: inline-block;
+	animation:
+		color 1s linear infinite,
+		rotate 2s ease-in-out infinite;
+
+	&:nth-child(2) { animation-delay: -.66s; }
+	&:nth-child(3) { animation-delay: -1.33s; }
+}
+
+@keyframes color {
+	50% { filter: hue-rotate(360deg); }
+}
+
+@keyframes rotate {
+	0%, 100% { transform: rotate(20deg); }
+	10% { transform: scale(1.1); }
+	50% { transform: rotate(-20deg); }
+	75% { transform: scale(.9); }
+}
+
+
 body{
     font-family: 'Nunito Semibold';
     text-align: center;
@@ -40,6 +62,10 @@ body{
 
 .jumbotron {
   position: relative;
+  font-size: 20vmin;
+  line-height: 100vh;
+  text-align: center;
+  background: transparent;
 }
 
 

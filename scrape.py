@@ -1,6 +1,7 @@
 #!/usr/bin/python2.7
 
-
+from joblib import Parallel, delayed
+import multiprocessing
 import urllib2
 import re
 import sys
@@ -117,7 +118,8 @@ def blogplot(user='ak73'):
                 else:
                     comments_db = comments_db.append({'user': cuser, 'num_comments': 1}, ignore_index=True)
 
-    for i in range(2, min(num_pages + 1, 100)):
+    def processBlogs(i):
+        print(i)
         link = 'https://tengaged.com/blog/' + user + '/page/' + str(i)
         html = download(link)
         soup = BeautifulSoup(html, "lxml")
@@ -129,7 +131,7 @@ def blogplot(user='ak73'):
             if blog.has_attr('rel') and blog.attrs['rel'] and blog.attrs['rel'][0].startswith('bookmark'):
                 blog_link = 'https://tengaged.com' + blog.attrs['href'].__str__()
                 blog_html = download(blog_link)
-                soup = BeautifulSoup(blog_html)
+                soup = BeautifulSoup(blog_html, "lxml")
 
                 if re.findall('<span class="floated miniadrank">(.*?)</span>', blog_html):
                     top_blog += 1
@@ -145,9 +147,17 @@ def blogplot(user='ak73'):
                         comments_db.set_value(index, 'num_comments', current_count + 1)
                     else:
                         comments_db = comments_db.append({'user': cuser, 'num_comments': 1}, ignore_index=True)
+
+    inputs = range(1,2)# range(1, min(num_pages + 1, 100))
+    num_cores = multiprocessing.cpu_count()
+    Parallel(n_jobs=num_cores)(delayed(processBlogs)(i) for i in inputs)
+
+
     comments_db.num_comments = comments_db.num_comments.astype(int)
     top10 = (comments_db.nlargest(20, 'num_comments'))
     top_blog_percentage = 100 * (float(top_blog) / (i * 6))
+
+
     a = sns.barplot(top10.user, top10.num_comments).set_title(
         user + '   top blog percentage:    ' + str(top_blog_percentage))
     b = a.axes
@@ -225,4 +235,5 @@ class ScrapeHTTPRequestHandler(BaseHTTPRequestHandler):
 
 
 if __name__ == '__main__':
-    run()
+    blogplot('ak73')
+    #run()
