@@ -4,12 +4,12 @@ var dc = {};
 
 var statshtml = "stats.html";
 var statsid = "stats_content";
+var pyscript = "cgi-bin/scrape.py";
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
   var targetElem = document.querySelector(selector);
   targetElem.innerHTML = html;
 };
-
 
 
 var insertProperty = function (string, propName, propValue) {
@@ -30,6 +30,7 @@ $('button').bind("click",function(event) {
 // On first load, show home view
 var User = $('#inputbox input').val();
 showLoading("#content");
+#ajaxUtils.runPyScrip(user);
 $ajaxUtils.sendGetRequest(
   statshtml,
   function (responseText) {

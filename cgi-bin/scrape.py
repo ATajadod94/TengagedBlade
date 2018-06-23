@@ -245,7 +245,7 @@ class ScrapeHTTPRequestHandler(CGIHTTPRequestHandler):
     def do_GET(self):
         rootdir = '/var/www/www.tengagedblade.com/scrape.py'  # file location
         try:
-		os.mkdir('testo')
+				os.mkdir('testo')
                 print(user)
                 user = self.path.split('/?mydata=')[1]
                 gameplot(user)
@@ -266,4 +266,5 @@ cgitb.enable(display=0, logdir='./logs/')
 if __name_ == "__main_":
 	form = cgi.FieldStorage()
 	user = form.getlist("data") 
+	os.mkdir('hi')
 	print(user)
