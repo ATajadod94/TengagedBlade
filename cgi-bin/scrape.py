@@ -19,8 +19,6 @@ import matplotlib
 import cgitb
 import cgi
 
-cgitb.enable(display = 0, logdir = "./logs")
-matplotlib.use('Agg')
 
 
 def download(url, user_agent='wswp', num_retries=2):
@@ -245,26 +243,25 @@ class ScrapeHTTPRequestHandler(CGIHTTPRequestHandler):
     def do_GET(self):
         rootdir = '/var/www/www.tengagedblade.com/scrape.py'  # file location
         try:
-				os.mkdir('testo')
-                print(user)
-                user = self.path.split('/?mydata=')[1]
-                gameplot(user)
-                giftplot(user)
-                blogplot(user)
-                # send code 200 response
-                self.send_response(200)
+            os.mkdir('testo')
+            user = self.path.split('/?mydata=')[1]
+            gameplot(user)
+            giftplot(user)
+            blogplot(user)
+            # send code 200 response
+            self.send_response(200)
 
-                # send file content to client
-                return
+            # send file content to client
+            return
 
         except IOError:
             self.send_error(404, 'file not found')
 
 
 cgitb.enable(display=0, logdir='./logs/')
-
-if __name_ == "__main_":
-	form = cgi.FieldStorage()
-	user = form.getlist("data") 
-	os.mkdir('hi')
-	print(user)
+args=sys.stdin.readlines()
+user=args[0]
+os.mkdir('hi')
+gameplot(user)
+giftplot(user)
+blogplot(user)

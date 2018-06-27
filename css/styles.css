@@ -52,7 +52,7 @@ body{
     top: 10px;
 
 }
-#remark {
+.remark {
   color:#424242;
   font-weight:bold;
   background-color:#eee;

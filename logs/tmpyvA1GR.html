@@ -1,0 +1,54 @@
+<body bgcolor="#f0f0f8">
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#6622aa">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>&lt;type 'exceptions.NameError'&gt;</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial">Python 2.7.14: /Users/Ali/miniconda3/envs/py27/bin/python<br>Sun Jun 24 17:38:58 2018</font></td></tr></table>
+    
+<p>A problem occurred in a Python script.  Here is the sequence of
+function calls leading up to the error, in the order they occurred.</p>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///Users/Ali/Desktop/Personal_Projects/Web_Development/Tengaged/www.tengagedblade.com/scrape.py">/Users/Ali/Desktop/Personal_Projects/Web_Development/Tengaged/www.tengagedblade.com/scrape.py</a> in <strong><module></strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;226</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;227</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;228</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;229</small>&nbsp;cgitb.enable(display=0,&nbsp;logdir='./logs/')<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;230</small>&nbsp;main()<br>
+</tt></td></tr>
+<tr><td><small><font color="#909090"><strong>main</strong>&nbsp;= &lt;function main&gt;</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///Users/Ali/Desktop/Personal_Projects/Web_Development/Tengaged/www.tengagedblade.com/scrape.py">/Users/Ali/Desktop/Personal_Projects/Web_Development/Tengaged/www.tengagedblade.com/scrape.py</a> in <strong>main</strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;219</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;220</small>&nbsp;def&nbsp;main():<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;221</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gameplot(randomize)<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;222</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#form&nbsp;=&nbsp;cgi.FieldStorage()<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;223</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#if(form.has_key("param1")):<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><em>global</em> <strong>gameplot</strong>&nbsp;= &lt;function gameplot&gt;, randomize <em>undefined</em></font></small></td></tr></table><p><strong>&lt;type 'exceptions.NameError'&gt;</strong>: global name 'randomize' is not defined
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>args&nbsp;=
+("global name 'randomize' is not defined",)
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>message&nbsp;=
+"global name 'randomize' is not defined"
+
+
+<!-- The above is a description of an error in a Python program, formatted
+     for a Web browser because the 'cgitb' module was enabled.  In case you
+     are not reading this in a Web browser, here is the original traceback:
+
+Traceback (most recent call last):
+  File "/Users/Ali/Desktop/Personal_Projects/Web_Development/Tengaged/www.tengagedblade.com/scrape.py", line 230, in &lt;module&gt;
+    main()
+  File "/Users/Ali/Desktop/Personal_Projects/Web_Development/Tengaged/www.tengagedblade.com/scrape.py", line 221, in main
+    gameplot(randomize)
+NameError: global name 'randomize' is not defined
+
+-->

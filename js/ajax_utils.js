@@ -23,6 +23,7 @@ function getRequestObject() {
 // Makes an Ajax GET request to 'requestUrl'
 ajaxUtils.sendGetRequest =
   function(requestUrl, responseHandler, isJsonResponse) {
+    console.log(requestUrl)
     var request = getRequestObject();
     request.onreadystatechange =
       function() {
@@ -59,15 +60,16 @@ function handleResponse(request,
 }
 
 ajaxUtils.runPyScript =
-  function (input){
-      var jqXHR = $.ajax({
-          type: "GET",
-          url: "scrape.py",
-          async: true,
-          data: { mydata: input }
-      });
-
-      return jqXHR.responseText;
+  function(requestUrl, user, responseHandler, isJsonResponse) {
+    var request = getRequestObject();
+    request.onreadystatechange =
+      function() {
+        handleResponse(request,
+                       responseHandler,
+                       isJsonResponse);
+      };
+    request.open("POST", requestUrl, true);
+    request.send(null); // for POST only
   };
 
 
