@@ -16,7 +16,7 @@ import cgi
 def blogplot(user='ak73'):
     html = requests.get('https://tengaged.com/blog/' + user).text
     blogs_text = re.findall('<span class="info">(.*?)</span>', html)
-    numblogs = filter(str.isdigit, blogs_text.__str__())
+    numblogs = filter(unicode.isdigit, blogs_text[0])
     soup = BeautifulSoup(html, 'html.parser')
     num_pages = (int(numblogs) / 6) +1
     page_blogs = soup.find(attrs={'class': 'blogPosts'})
@@ -116,20 +116,9 @@ def main():
     if "param1" in form:
         user = form["param1"].value
         blogplot(user)
+        print('/var/www/www.tengagedblade.com/blog_data/' + user)
 
 cgitb.enable(display=0, logdir='./logs/')
-blogplot('violets')
+blogplot('joseline')
 
 main()
-print "Content-type: text/xml"
-print
-print "<?xml version='1.0'?>"
-print "<names>"
-print "\t<name>"
-print "\t\t<first>Alpha</first>"
-print "\t\t<last>Delta</last>"
-print "\t</name>"
-print "\t<name>"
-print "\t\t<first>Bravo</first>"
-print "\t\t<last>Omega</last>"
-print "\t</name>"

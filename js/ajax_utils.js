@@ -59,20 +59,6 @@ function handleResponse(request,
   }
 }
 
-ajaxUtils.runPyScript =
-  function(requestUrl, user, responseHandler, isJsonResponse) {
-    var request = getRequestObject();
-    request.onreadystatechange =
-      function() {
-        handleResponse(request,
-                       responseHandler,
-                       isJsonResponse);
-      };
-    request.open("POST", requestUrl, true);
-    request.send(null); // for POST only
-  };
-
-
 // Expose utility to the global object
 global.$ajaxUtils = ajaxUtils;
 

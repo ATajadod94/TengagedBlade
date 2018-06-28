@@ -21,14 +21,17 @@ def gameplot(user='alireza1373'):
     #  rank = soup.find(attrs={'class': 'miniadrank'}).text
     #last_activity = soup.findAll(attrs={'class': 'remark'})[2].text;
 
-    game_pages = int(soup.findAll(attrs={'class': 'page'})[-1].text);
-
+    game_pages = soup.findAll(attrs={'class': 'page'})
+    pages = [int(_.text) for _ in game_pages]
+    game_pages = max(pages)
     allgames = pd.DataFrame(columns=['type', 'placing'])
 
-    for i in range(1, game_pages + 1):
-        html = requests.post('http://tengaged.com/user/' + user, {'action': 'loadGames', 'p': i, '&uid' : user})
-        soup = BeautifulSoup(html.text, 'html.parser')
+    for i in range(1, game_pages
+                      +1):
+        html = requests.post('https://tengaged.com/user/' + user, {'action': 'loadGames', 'p': 25, 'uid': user})
+        soup = BeautifulSoup(html.text)
         games_in_page = soup.findAll(attrs={'class': 'game'})
+
         for agame in games_in_page:
             if agame.text.startswith('Enter'):
                 continue
@@ -60,28 +63,15 @@ def gameplot(user='alireza1373'):
                        order=['casting', 'fasting', 'rookies', 'frooks', 'survivor', 'hunger', 'stars']).set_title(user)
     axes = lm.axes
     axes.set_yticks(range(1, 31))
-    # plt.savefig(lm, format=format)
-    plt.savefig('/var/www/www.tengagedblade.com/game_data/' + user)
+    plt.savefig(lm, format=format)
+    plt.savefig('./game_data/' + user)
     # plt.show()
 
 def main():
     form = cgi.FieldStorage()
     if "param1" in form:
         user = form["param1"].value
-        gameplot(user)
+        print('/var/www/www.tengagedblade.com/game_data/' + user)
 
+gameplot('ak73')
 cgitb.enable(display=0, logdir='./logs/')
-
-main()
-print "Content-type: text/xml"
-print
-print "<?xml version='1.0'?>"
-print "<names>"
-print "\t<name>"
-print "\t\t<first>Alpha</first>"
-print "\t\t<last>Delta</last>"
-print "\t</name>"
-print "\t<name>"
-print "\t\t<first>Bravo</first>"
-print "\t\t<last>Omega</last>"
-print "\t</name>"

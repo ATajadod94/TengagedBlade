@@ -52,6 +52,8 @@ def main():
     if "param1" in form:
         user = form["param1"].value
         giftplot(user)
+        print('/var/www/www.tengagedblade.com/gift_data/' + user)
+
 
 cgitb.enable(display=0, logdir='./logs/')
-
+giftplot('joseline')

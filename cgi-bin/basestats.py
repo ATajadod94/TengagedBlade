@@ -12,3 +12,5 @@ import seaborn as sns
 import cgitb
 import cgi
 
+cgitb.enable(display=0, logdir='./logs/')
+print[1,2,3,4,5,6,7,8]
