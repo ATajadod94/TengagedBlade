@@ -42,6 +42,6 @@ CGI (common Gateway Interface) through apache. At this time, a database is not b
 
 
 ## Potential next steps:
-* Collecting a database
+* Creating a database
 * DJ3 Data visualization 
  
