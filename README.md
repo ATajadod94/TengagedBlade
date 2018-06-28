@@ -6,8 +6,7 @@ Regardless, it provides popular functionality to the users of the website.
 
 Tengaged blade is hosted on a google vritual machine. It grabs a username which must be an existing user on Tengaged.com, 
 scrapes the site and returns multiple relevant statistical figures. The scarping is done via Python and executed by a
-CGI (common Gateway Interface) through apache. At this time, a database is not being collected. Finally, Ajax is used to load the
-website dynamically. 
+CGI (common Gateway Interface) through apache. At this time, a database is not being collected. Finally, Javascript and Ajax are used to load the website dynamically and run the scraping processes asychronously. 
 
 ## Technologies Used
 
@@ -20,7 +19,7 @@ website dynamically.
 
 # Back end: 
 * Python 
-* Ajax 
+* Ajax  (Dom selection is done via js)
 
 # Hosting: 
 * Apache
