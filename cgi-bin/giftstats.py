@@ -1,3 +1,5 @@
+#!/usr/bin/python2.7
+
 import urllib2
 import re
 import requests
@@ -52,8 +54,12 @@ def main():
     if "param1" in form:
         user = form["param1"].value
         giftplot(user)
-        print('/var/www/www.tengagedblade.com/gift_data/' + user)
+        print('gift_data/' + user)
 
-
+giftplot('suzycroatia')
 cgitb.enable(display=0, logdir='./logs/')
-giftplot('joseline')
+#main()
+print "Content-type: text/html\n"
+print
+main()
+

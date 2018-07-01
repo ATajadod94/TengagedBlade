@@ -30,6 +30,7 @@ var showLoading = function (selector) {
 $('button').bind("click",function(event) {
 // On first load, show home view
 var User = '?param1=' + document.querySelector(".form-control").value;
+
 $ajaxUtils.sendGetRequest(
   statshtml,
   function (responseText) {

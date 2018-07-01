@@ -1,3 +1,5 @@
+#!/usr/bin/python2.7
+
 from multiprocessing import Pool
 import urllib2
 import re
@@ -44,7 +46,7 @@ def blogplot(user='ak73'):
                 else:
                     comments_db = comments_db.append({'user': cuser, 'num_comments': 1}, ignore_index=True)
 
-    blog_links = ('https://tengaged.com/blog/' + user + '/page/' + str(i) for i in range(1, max(50, num_pages + 1)))
+    blog_links = ('https://tengaged.com/blog/' + user + '/page/' + str(i) for i in range(1, max(30, num_pages + 1)))
 
     ## first multi process
     p = Pool(processes=10)
@@ -116,9 +118,12 @@ def main():
     if "param1" in form:
         user = form["param1"].value
         blogplot(user)
-        print('/var/www/www.tengagedblade.com/blog_data/' + user)
+        print('blog_data/' + user)
 
 cgitb.enable(display=0, logdir='./logs/')
-blogplot('joseline')
+blogplot('violets')
 
+#main()
+print "Content-type: text/html\n"
+print
 main()

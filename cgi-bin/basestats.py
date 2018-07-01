@@ -1,3 +1,4 @@
+#!/usr/bin/python2.7
 
 import urllib2
 import re
@@ -13,4 +14,6 @@ import cgitb
 import cgi
 
 cgitb.enable(display=0, logdir='./logs/')
-print[1,2,3,4,5,6,7,8]
+print "Content-type: text/html\n"
+print
+print("[1,2,3,4,5,6,7,8]")

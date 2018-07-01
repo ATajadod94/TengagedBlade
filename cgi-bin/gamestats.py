@@ -1,3 +1,4 @@
+#!/usr/bin/python2.7
 
 import urllib2
 import re
@@ -20,18 +21,15 @@ def gameplot(user='alireza1373'):
     karma = soup.find(attrs={'class': 'remark'}).text
     #  rank = soup.find(attrs={'class': 'miniadrank'}).text
     #last_activity = soup.findAll(attrs={'class': 'remark'})[2].text;
-
     game_pages = soup.findAll(attrs={'class': 'page'})
     pages = [int(_.text) for _ in game_pages]
     game_pages = max(pages)
     allgames = pd.DataFrame(columns=['type', 'placing'])
 
-    for i in range(1, game_pages
-                      +1):
-        html = requests.post('https://tengaged.com/user/' + user, {'action': 'loadGames', 'p': 25, 'uid': user})
-        soup = BeautifulSoup(html.text)
+    for i in range(1, game_pages + 1):
+        html = requests.post('https://tengaged.com/user/' + user, {'action': 'loadGames', 'p': i, 'uid' : user})
+        soup = BeautifulSoup(html.text, 'html.parser')
         games_in_page = soup.findAll(attrs={'class': 'game'})
-
         for agame in games_in_page:
             if agame.text.startswith('Enter'):
                 continue
@@ -63,15 +61,19 @@ def gameplot(user='alireza1373'):
                        order=['casting', 'fasting', 'rookies', 'frooks', 'survivor', 'hunger', 'stars']).set_title(user)
     axes = lm.axes
     axes.set_yticks(range(1, 31))
-    plt.savefig(lm, format=format)
-    plt.savefig('./game_data/' + user)
+    # plt.savefig(lm, format=format)
+    plt.savefig('/var/www/www.tengagedblade.com/game_data/' + user)
     # plt.show()
 
 def main():
     form = cgi.FieldStorage()
     if "param1" in form:
         user = form["param1"].value
-        print('/var/www/www.tengagedblade.com/game_data/' + user)
+        gameplot(user) 
+        print('game_data/' + user)
 
-gameplot('ak73')
 cgitb.enable(display=0, logdir='./logs/')
+
+print "Content-type: text/html\n"
+print
+main()
