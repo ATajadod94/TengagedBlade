@@ -60,15 +60,13 @@ def gameplot(user='alireza1373'):
                        order=['casting', 'fasting', 'rookies', 'frooks', 'survivor', 'hunger', 'stars']).set_title(user)
     axes = lm.axes
     axes.set_yticks(range(1, 31))
-    # plt.savefig(lm, format=format)
     plt.savefig('/var/www/www.tengagedblade.com/game_data/' + user)
-    # plt.show()
 
 def main():
     form = cgi.FieldStorage()
     if "param1" in form:
         user = form["param1"].value
-        gameplot(user) 
+        gameplot(user[1::])
         print('game_data/' + user)
 
 cgitb.enable(display=0, logdir='./logs/')

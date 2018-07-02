@@ -3,15 +3,120 @@
   <component name="ChangeListManager">
     <list default="true" id="74655b91-762c-404d-a13e-fefbd2232ebc" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/www.tengagedblade.com.iml" afterPath="$PROJECT_DIR$/.idea/www.tengagedblade.com.iml" />
+      <change beforePath="$PROJECT_DIR$/blog_data/Birks4444.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/Boots22.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/CalebDaBoss.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/EliOrtiz1234.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/JasonXtreme.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/Juliann.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/KatarinaDuCouteau.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/Lemjam6.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/NicoleF.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/NotNicky333.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/RobertGuajardo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/Roshy.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/SomebodyAwesome.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/Yoshitomi.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/admir.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/ak73.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/bengalboy.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/carsonl.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/iTy990.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/jadennator1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/jdog.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/lemonface.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/rellizuraddixion.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/sjsoccer88.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/spartagow.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/suzycroatia.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/violets.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/blog_data/zakisaboss.png" afterPath="" />
       <change beforePath="$PROJECT_DIR$/cgi-bin/basestats.py" afterPath="$PROJECT_DIR$/cgi-bin/basestats.py" />
       <change beforePath="$PROJECT_DIR$/cgi-bin/blogstats.py" afterPath="$PROJECT_DIR$/cgi-bin/blogstats.py" />
       <change beforePath="$PROJECT_DIR$/cgi-bin/gamestats.py" afterPath="$PROJECT_DIR$/cgi-bin/gamestats.py" />
       <change beforePath="$PROJECT_DIR$/cgi-bin/giftstats.py" afterPath="$PROJECT_DIR$/cgi-bin/giftstats.py" />
-      <change beforePath="$PROJECT_DIR$/css/statsstyles.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
+      <change beforePath="$PROJECT_DIR$/game_data/AustinRules6969.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/BengalBoy.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/C00LDUDE1000.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/JasonXtreme.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/JonMcGillis.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/JourdanBabyXoXo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/KrisStory.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/Lachie227.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/LeaSirk.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/LucasToledo_15.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/MartaGH12_.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/Natepresnell.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/Oswald19.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/Philip13.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/RArsenault.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/RobertGuajardo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/Suzycroatia.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/Zuelke.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/admir.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/ak73.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/alanb1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/alireza1373.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/aria_grande.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/ashszoke.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/fighterman.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/gigi10.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/islandsurvivor.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/ivan1234.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/jadennator1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/jakehou97.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/jdog.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/jenzie.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/juliann.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/lemjam6.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/maplestory.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/minie.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/mitchkid64.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/petro.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/phenomanimal.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/rellizuraddixion.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/sjsoccer88.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/smuguy2012.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/spartagow.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/tits_mcgee.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/tofutime.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/violets.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/game_data/zakisaboss.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/Ali123Francesca.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/AllieBoBallie.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/Ametrine.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/BengalBoy.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/GoodKaren.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/JourdanBabyXoXo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/Katherinee_.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/RedFabFoxy.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/RobertGuajardo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/TheEclipse.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/ak73.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/aria_grande.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/bigbrotherdonny.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/cotbey.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/fighterman.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/gigi10.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/icebeast.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/jacksonjoseph99.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/jadennator1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/jenzie.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/juliann.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/lazeric.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/minie.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/pizzawithcookirs.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/sjsoccer88.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/suzycroatia.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/tarag.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/teddybear.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/unkown.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/violets.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/yarn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gift_data/zakisaboss.png" afterPath="" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
-      <change beforePath="$PROJECT_DIR$/stats.html" afterPath="$PROJECT_DIR$/stats.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,6 +126,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/www_tengagedblade_com$google.coverage" NAME="google Coverage Results" MODIFIED="1530561254145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/www_tengagedblade_com$gamestats.coverage" NAME="gamestats Coverage Results" MODIFIED="1530186471836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cgi-bin" />
     <SUITE FILE_PATH="coverage/www_tengagedblade_com$basestats.coverage" NAME="basestats Coverage Results" MODIFIED="1530538892462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cgi-bin" />
   </component>
@@ -41,18 +147,18 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="72" column="62" lean-forward="false" selection-start-line="72" selection-start-column="62" selection-end-line="72" selection-end-column="62" />
+            <state relative-caret-position="125">
+              <caret line="31" column="42" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="basestats.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="basestats.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cgi-bin/basestats.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+            <state relative-caret-position="345">
+              <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="27" />
               <folding>
                 <element signature="e#22#36#0" expanded="true" />
               </folding>
@@ -60,24 +166,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blogstats.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="blogstats.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cgi-bin/blogstats.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="122" column="53" lean-forward="false" selection-start-line="122" selection-start-column="53" selection-end-line="122" selection-end-column="53" />
+            <state relative-caret-position="504">
+              <caret line="123" column="34" lean-forward="false" selection-start-line="123" selection-start-column="34" selection-end-line="123" selection-end-column="34" />
               <folding>
                 <element signature="e#22#54#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="41" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="41" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -105,8 +201,8 @@
       <file leaf-file-name="giftstats.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cgi-bin/giftstats.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+            <state relative-caret-position="388">
+              <caret line="57" column="26" lean-forward="false" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -115,40 +211,36 @@
       <file leaf-file-name="gamestats.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cgi-bin/gamestats.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+            <state relative-caret-position="450">
+              <caret line="68" column="26" lean-forward="false" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="backend_bases.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/miniconda3/envs/py27/lib/python2.7/site-packages/matplotlib/backend_bases.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33390">
-              <caret line="2258" column="0" lean-forward="false" selection-start-line="2258" selection-start-column="0" selection-end-line="2258" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="figure.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/miniconda3/envs/py27/lib/python2.7/site-packages/matplotlib/figure.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26670">
-              <caret line="1813" column="0" lean-forward="false" selection-start-line="1813" selection-start-column="0" selection-end-line="1813" selection-end-column="0" />
-              <folding />
-            </state>
+      <file leaf-file-name="www.tengagedblade.com" pinned="false" current-in-tab="false">
+        <entry file="dummy:///www.tengagedblade.com">
+          <provider selected="true" editor-type-id="gcs-bucket-content-editor">
+            <state />
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>pages</find>
       <find>media-object</find>
       <find>max</find>
+      <find>&lt;</find>
+      <find>User</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -159,13 +251,14 @@
       <list>
         <option value="$PROJECT_DIR$/js/ajax_utils.js" />
         <option value="$PROJECT_DIR$/css/styles.css" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/cgi-bin/gamestats.py" />
-        <option value="$PROJECT_DIR$/cgi-bin/basestats.py" />
         <option value="$PROJECT_DIR$/stats.html" />
-        <option value="$PROJECT_DIR$/cgi-bin/giftstats.py" />
+        <option value="$PROJECT_DIR$/cgi-bin/scratch.py" />
         <option value="$PROJECT_DIR$/js/script.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/cgi-bin/basestats.py" />
         <option value="$PROJECT_DIR$/cgi-bin/blogstats.py" />
+        <option value="$PROJECT_DIR$/cgi-bin/gamestats.py" />
+        <option value="$PROJECT_DIR$/cgi-bin/giftstats.py" />
       </list>
     </option>
   </component>
@@ -175,11 +268,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="40" />
-    <option name="y" value="23" />
-    <option name="width" value="1880" />
-    <option name="height" value="1057" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -207,6 +298,11 @@
             <path>
               <item name="www.tengagedblade.com" type="b2602c69:ProjectViewProjectNode" />
               <item name="www.tengagedblade.com" type="462c0819:PsiDirectoryNode" />
+              <item name="cgi-bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="www.tengagedblade.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="www.tengagedblade.com" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -223,9 +319,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.appengine.AppEngineModulesConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="ACTIVE_CLOUD_PROJECT_ACCOUNT" value="atajadod94@gmail.com" />
+    <property name="ACTIVE_CLOUD_PROJECT_NAME" value="TengagedBlade" />
+    <property name="ACTIVE_CLOUD_PROJECT_ID" value="tengagedblade" />
+    <property name="ACTIVE_CLOUD_PROJECT_NUMBER" value="1035852108569" />
+    <property name="nodejs.jest.jest_package" value="" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -249,6 +350,18 @@
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/www.tengagedblade.com/index.html" />
+    <configuration name="Unnamed" type="PyRemoteDebugConfigurationType" factoryName="Python Remote Debug">
+      <module name="" />
+      <option name="PORT" value="0" />
+      <option name="HOST" value="" />
+      <PathMappingSettings>
+        <option name="pathMappings">
+          <list />
+        </option>
+      </PathMappingSettings>
+      <option name="REDIRECT_OUTPUT" value="true" />
+      <option name="SUSPEND_AFTER_CONNECT" value="true" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -306,10 +419,45 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="1" class="java.lang.String" itemvalue="Python.gamestats" />
-      <item index="2" class="java.lang.String" itemvalue="Python.basestats" />
+    <configuration default="true" type="Python.AppEngineServer" factoryName="App Engine server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="$USER_HOME$/miniconda3/envs/py27/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="www.tengagedblade.com" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="host" value="http://35.196.36.213/" />
+      <option name="port" value="8000" />
+      <option name="browserUrl" value="" />
+      <option name="additionalOptions" value="" />
+    </configuration>
+    <configuration name="google" type="Python.AppEngineServer" factoryName="App Engine server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="$USER_HOME$/miniconda3/envs/py27/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="www.tengagedblade.com" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="host" value="http://35.196.36.213/" />
+      <option name="browserUrl" value="http://http://35.196.36.213/:8000/" />
+      <option name="additionalOptions" value="" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="App Engine server.google" />
+      <item index="1" class="java.lang.String" itemvalue="Python Remote Debug.Unnamed" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="3" class="java.lang.String" itemvalue="Python.gamestats" />
+      <item index="4" class="java.lang.String" itemvalue="Python.basestats" />
     </list>
     <recent_temporary>
       <list size="3">
@@ -336,22 +484,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="23" width="1880" height="1057" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4118607" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="430" height="880" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969216" sideWeight="0.5021299" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21352503" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="430" height="880" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.092491835" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.4978701" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.6198083" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969216" sideWeight="0.4978701" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5473908" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3226333" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3221512" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Google Cloud Storage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972796" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11821086" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35153922" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35153922" sideWeight="0.49361023" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -360,6 +509,29 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21352503" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="430" height="880" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09105431" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3226333" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972796" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35153922" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -377,12 +549,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cgi-bin/gamestats.py</url>
-          <line>65</line>
+          <line>63</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cgi-bin/gamestats.py</url>
-          <line>63</line>
+          <line>62</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -395,12 +567,84 @@
           <line>53</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/script.js</url>
+          <line>31</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="19" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="41" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stats.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cgi-bin/giftstats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cgi-bin/gamestats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/miniconda3/envs/py27/lib/python2.7/site-packages/matplotlib/backend_bases.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33390">
+          <caret line="2258" column="0" lean-forward="false" selection-start-line="2258" selection-start-column="0" selection-end-line="2258" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/miniconda3/envs/py27/lib/python2.7/site-packages/matplotlib/figure.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26670">
+          <caret line="1813" column="0" lean-forward="false" selection-start-line="1813" selection-start-column="0" selection-end-line="1813" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cgi-bin/blogstats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1830">
+          <caret line="122" column="53" lean-forward="false" selection-start-line="122" selection-start-column="53" selection-end-line="122" selection-end-column="53" />
+          <folding>
+            <element signature="e#22#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -673,20 +917,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="41" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cgi-bin/gamestats.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/cgi-bin/game_data.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stats.html">
@@ -697,38 +930,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cgi-bin/giftstats.py">
+    <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+        <state relative-caret-position="125">
+          <caret line="31" column="42" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="72" column="62" lean-forward="false" selection-start-line="72" selection-start-column="62" selection-end-line="72" selection-end-column="62" />
+        <state relative-caret-position="272">
+          <caret line="16" column="64" lean-forward="false" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cgi-bin/blogstats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="123" column="34" lean-forward="false" selection-start-line="123" selection-start-column="34" selection-end-line="123" selection-end-column="34" />
+          <folding>
+            <element signature="e#22#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cgi-bin/scratch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cgi-bin/gamestats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="68" column="26" lean-forward="false" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cgi-bin/giftstats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="57" column="26" lean-forward="false" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cgi-bin/basestats.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+        <state relative-caret-position="345">
+          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="27" />
           <folding>
             <element signature="e#22#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cgi-bin/blogstats.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="122" column="53" lean-forward="false" selection-start-line="122" selection-start-column="53" selection-end-line="122" selection-end-column="53" />
-          <folding>
-            <element signature="e#22#54#0" expanded="true" />
           </folding>
         </state>
       </provider>

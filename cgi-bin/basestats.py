@@ -21,7 +21,8 @@ def main():
     form = cgi.FieldStorage()
     if "param1" in form:
         user = form["param1"].value
-        basestats(user)
+        basestats(user[1::])
+
 
 cgitb.enable(display=0, logdir='./logs/')
 

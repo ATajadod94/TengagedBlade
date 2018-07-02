@@ -29,7 +29,7 @@ var showLoading = function (selector) {
 $('button').bind("click",function(event) {
 // On first load, show home view
 $('.visibility').css("visibility","visible");
-var User = '?param1=' + document.querySelector(".form-control").value;
+var User = '?param1=' + $(".form-control")[1].value
 
 $ajaxUtils.sendGetRequest(
   statshtml,

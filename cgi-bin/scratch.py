@@ -1,26 +1,7 @@
-#!/usr/bin/python2.7
-
-from multiprocessing import Pool
-import os
-import re
-import requests
-from bs4 import BeautifulSoup
-import pandas as pd
-import numpy as np
-import matplotlib
-matplotlib.use('AGG')
-import matplotlib.pyplot as plt
-import seaborn as sns
-import cgitb
-import cgi
-
-
 def blogplot(user='ak73'):
     html = requests.get('https://tengaged.com/blog/' + user).text
     blogs_text = re.findall('<span class="info">(.*?)</span>', html)
-    numblogs = filter(unicode.isdigit, blogs_text[0])
-    blog_counter = max(120, numblogs)
-    print(numblogs, blog_counter)
+    numblogs = filter(str.isdigit, blogs_text.__str__())
     soup = BeautifulSoup(html, 'html.parser')
     num_pages = (int(numblogs) / 6) +1
     page_blogs = soup.find(attrs={'class': 'blogPosts'})
@@ -48,7 +29,7 @@ def blogplot(user='ak73'):
                 else:
                     comments_db = comments_db.append({'user': cuser, 'num_comments': 1}, ignore_index=True)
 
-    blog_links = ('https://tengaged.com/blog/' + user + '/page/' + str(i) for i in range(1, max(20, num_pages + 1)))
+    blog_links = ('https://tengaged.com/blog/' + user + '/page/' + str(i) for i in range(1, max(50, num_pages + 1)))
 
     ## first multi process
     p = Pool(processes=10)
@@ -101,32 +82,3 @@ def blogplot(user='ak73'):
     b = a.axes
     b.set_xticklabels(b.get_xticklabels(), rotation=40, ha="right")
     plt.savefig('/var/www/www.tengagedblade.com/blog_data/' + user)
-
-
-def gethtml(url, user_agent='tblade' , num_retries = 5):
-    headers = {'User-agent': user_agent}
-    url_html = requests.get(url)
-    if url_html.ok:
-        return url_html
-    elif url_html.error:
-        print('Download error:', url_html.error.reason)
-        if num_retries > 0:
-            if hasattr(url_html.error, 'code') and 500 <= url_html.error.code < 600:
-                # retry 5XX HTTP errors
-                return gethtml(url, user_agent, num_retries - 1)
-
-def main():
-    form = cgi.FieldStorage()
-    if "param1" in form:
-        user = form["param1"].value
-        if os.path.exists('blog_data/' + user):
-            if os.path.getmtime('blog_data/' + user) < 1209600:
-                blogplot(user[1::])
-        print('blog_data/' + user)
-
-cgitb.enable(display=0, logdir='./logs/')
-
-#main()
-print "Content-type: text/html\n"
-print
-main()
