@@ -119,7 +119,7 @@ def main():
         user = form["param1"].value
         if os.path.exists('blog_data/' + user):
             if os.path.getmtime('blog_data/' + user) < 1209600:
-                blogplot(user[1::])
+                blogplot(user)
         print('blog_data/' + user)
 
 cgitb.enable(display=0, logdir='./logs/')

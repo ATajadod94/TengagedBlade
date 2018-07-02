@@ -53,7 +53,7 @@ def main():
     form = cgi.FieldStorage()
     if "param1" in form:
         user = form["param1"].value
-        giftplot(user[1::])
+        giftplot(user)
         print('gift_data/' + user)
 
 giftplot('suzycroatia')
