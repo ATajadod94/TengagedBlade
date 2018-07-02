@@ -19,8 +19,6 @@ def blogplot(user='ak73'):
     html = requests.get('https://tengaged.com/blog/' + user).text
     blogs_text = re.findall('<span class="info">(.*?)</span>', html)
     numblogs = filter(unicode.isdigit, blogs_text[0])
-    blog_counter = max(120, numblogs)
-    print(numblogs, blog_counter)
     soup = BeautifulSoup(html, 'html.parser')
     num_pages = (int(numblogs) / 6) +1
     page_blogs = soup.find(attrs={'class': 'blogPosts'})

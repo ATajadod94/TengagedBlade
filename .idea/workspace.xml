@@ -2,121 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74655b91-762c-404d-a13e-fefbd2232ebc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/www.tengagedblade.com.iml" afterPath="$PROJECT_DIR$/.idea/www.tengagedblade.com.iml" />
-      <change beforePath="$PROJECT_DIR$/blog_data/Birks4444.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/Boots22.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/CalebDaBoss.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/EliOrtiz1234.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/JasonXtreme.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/Juliann.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/KatarinaDuCouteau.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/Lemjam6.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/NicoleF.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/NotNicky333.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/RobertGuajardo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/Roshy.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/SomebodyAwesome.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/Yoshitomi.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/admir.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/ak73.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/bengalboy.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/carsonl.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/iTy990.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/jadennator1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/jdog.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/lemonface.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/rellizuraddixion.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/sjsoccer88.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/spartagow.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/suzycroatia.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/violets.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/blog_data/zakisaboss.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cgi-bin/basestats.py" afterPath="$PROJECT_DIR$/cgi-bin/basestats.py" />
       <change beforePath="$PROJECT_DIR$/cgi-bin/blogstats.py" afterPath="$PROJECT_DIR$/cgi-bin/blogstats.py" />
       <change beforePath="$PROJECT_DIR$/cgi-bin/gamestats.py" afterPath="$PROJECT_DIR$/cgi-bin/gamestats.py" />
       <change beforePath="$PROJECT_DIR$/cgi-bin/giftstats.py" afterPath="$PROJECT_DIR$/cgi-bin/giftstats.py" />
-      <change beforePath="$PROJECT_DIR$/game_data/AustinRules6969.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/BengalBoy.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/C00LDUDE1000.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/JasonXtreme.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/JonMcGillis.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/JourdanBabyXoXo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/KrisStory.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/Lachie227.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/LeaSirk.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/LucasToledo_15.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/MartaGH12_.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/Natepresnell.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/Oswald19.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/Philip13.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/RArsenault.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/RobertGuajardo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/Suzycroatia.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/Zuelke.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/admir.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/ak73.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/alanb1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/alireza1373.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/aria_grande.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/ashszoke.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/fighterman.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/gigi10.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/islandsurvivor.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/ivan1234.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/jadennator1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/jakehou97.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/jdog.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/jenzie.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/juliann.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/lemjam6.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/maplestory.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/minie.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/mitchkid64.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/petro.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/phenomanimal.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/rellizuraddixion.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/sjsoccer88.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/smuguy2012.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/spartagow.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/tits_mcgee.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/tofutime.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/violets.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/game_data/zakisaboss.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/Ali123Francesca.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/AllieBoBallie.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/Ametrine.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/BengalBoy.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/GoodKaren.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/JourdanBabyXoXo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/Katherinee_.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/RedFabFoxy.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/RobertGuajardo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/TheEclipse.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/ak73.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/aria_grande.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/bigbrotherdonny.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/cotbey.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/fighterman.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/gigi10.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/icebeast.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/jacksonjoseph99.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/jadennator1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/jenzie.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/juliann.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/lazeric.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/minie.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/pizzawithcookirs.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/sjsoccer88.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/suzycroatia.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/tarag.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/teddybear.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/unkown.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/violets.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/yarn.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gift_data/zakisaboss.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -154,7 +42,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="basestats.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="basestats.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cgi-bin/basestats.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
@@ -169,8 +57,8 @@
       <file leaf-file-name="blogstats.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cgi-bin/blogstats.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="123" column="34" lean-forward="false" selection-start-line="123" selection-start-column="34" selection-end-line="123" selection-end-column="34" />
+            <state relative-caret-position="200">
+              <caret line="48" column="98" lean-forward="false" selection-start-line="48" selection-start-column="98" selection-end-line="48" selection-end-column="98" />
               <folding>
                 <element signature="e#22#54#0" expanded="true" />
               </folding>
@@ -198,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="giftstats.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="giftstats.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cgi-bin/giftstats.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="57" column="26" lean-forward="false" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+            <state relative-caret-position="298">
+              <caret line="49" column="67" lean-forward="false" selection-start-line="49" selection-start-column="67" selection-end-line="49" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -211,8 +99,8 @@
       <file leaf-file-name="gamestats.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cgi-bin/gamestats.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="68" column="26" lean-forward="false" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+            <state relative-caret-position="-2">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -241,6 +129,7 @@
       <find>max</find>
       <find>&lt;</find>
       <find>User</find>
+      <find>50</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -485,6 +374,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969216" sideWeight="0.5021299" order="7" side_tool="true" content_ui="tabs" />
@@ -492,7 +382,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.4978701" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.6198083" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969216" sideWeight="0.4978701" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969216" sideWeight="0.4978701" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5473908" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3221512" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -544,22 +434,22 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cgi-bin/blogstats.py</url>
-          <line>124</line>
+          <line>122</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cgi-bin/gamestats.py</url>
-          <line>63</line>
+          <line>69</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cgi-bin/gamestats.py</url>
-          <line>62</line>
+          <line>49</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cgi-bin/gamestats.py</url>
-          <line>60</line>
+          <line>47</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -946,36 +836,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cgi-bin/blogstats.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="123" column="34" lean-forward="false" selection-start-line="123" selection-start-column="34" selection-end-line="123" selection-end-column="34" />
-          <folding>
-            <element signature="e#22#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cgi-bin/scratch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
           <caret line="84" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cgi-bin/gamestats.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="68" column="26" lean-forward="false" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cgi-bin/giftstats.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="57" column="26" lean-forward="false" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -987,6 +851,32 @@
           <folding>
             <element signature="e#22#36#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cgi-bin/blogstats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="48" column="98" lean-forward="false" selection-start-line="48" selection-start-column="98" selection-end-line="48" selection-end-column="98" />
+          <folding>
+            <element signature="e#22#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cgi-bin/gamestats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cgi-bin/giftstats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="49" column="67" lean-forward="false" selection-start-line="49" selection-start-column="67" selection-end-line="49" selection-end-column="67" />
+          <folding />
         </state>
       </provider>
     </entry>

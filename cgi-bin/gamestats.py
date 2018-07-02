@@ -15,24 +15,31 @@ import cgi
 
 def gameplot(user='alireza1373'):
     html = requests.get('https://tengaged.com/user/' + user).text
+    ##karma, rank = re.findall('<span class="remark">(.*?)</span>', html)[0:2]
     soup = BeautifulSoup(html, 'html.parser')
+    games_played_default = soup.findAll(attrs={'class': 'remark'})[1].text;
     karma = soup.find(attrs={'class': 'remark'}).text
-    soup = BeautifulSoup(html, 'html.parser')
+    #  rank = soup.find(attrs={'class': 'miniadrank'}).text
+    # last_activity = soup.findAll(attrs={'class': 'remark'})[2].text;
+
     game_pages = soup.findAll(attrs={'class': 'page'})
     pages = [int(_.text) for _ in game_pages]
     game_pages = max(pages)
     allgames = pd.DataFrame(columns=['type', 'placing'])
 
-    for i in range(1, game_pages + 1):
-        html = requests.post('https://tengaged.com/user/' + user, {'action': 'loadGames', 'p': i, 'uid' : user})
-        soup = BeautifulSoup(html.text, 'html.parser')
+    for i in range(1, game_pages
+                      + 1):
+        html = requests.post('https://tengaged.com/user/' + user, {'action': 'loadGames', 'p': 25, 'uid': user})
+        soup = BeautifulSoup(html.text)
         games_in_page = soup.findAll(attrs={'class': 'game'})
+
         for agame in games_in_page:
             if agame.text.startswith('Enter'):
                 continue
             placing = agame.find_all('a')[0].text
             placing = filter(str.isdigit, placing.__str__())
             fast = agame.attrs['class']
+
             fast = agame.text.__contains__('FF') or agame.text.__contains__('FDay')
             game = agame.find_all('a')[0].attrs['class'][0]
             if game.startswith('ghbut'):
@@ -52,15 +59,14 @@ def gameplot(user='alireza1373'):
             if game.startswith('gsbut'):
                 allgames = allgames.append({'type': 'stars', 'placing': int(placing)}, ignore_index=True)
 
-
     realgames = allgames.__len__()
-    kpg = karma/realgames
-    print(kpg)
     lm = sns.swarmplot(allgames.type, allgames.placing.astype(int),
                        order=['casting', 'fasting', 'rookies', 'frooks', 'survivor', 'hunger', 'stars']).set_title(user)
     axes = lm.axes
     axes.set_yticks(range(1, 31))
-    plt.savefig('/var/www/www.tengagedblade.com/game_data/' + user)
+    plt.savefig(lm, format=format)
+    plt.savefig('./game_data/' + user)
+    # plt.show()
 
 def main():
     form = cgi.FieldStorage()
