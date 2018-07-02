@@ -1,7 +1,7 @@
 #!/usr/bin/python2.7
 
 from multiprocessing import Pool
-import urllib2
+import os
 import re
 import requests
 from bs4 import BeautifulSoup
@@ -19,6 +19,8 @@ def blogplot(user='ak73'):
     html = requests.get('https://tengaged.com/blog/' + user).text
     blogs_text = re.findall('<span class="info">(.*?)</span>', html)
     numblogs = filter(unicode.isdigit, blogs_text[0])
+    blog_counter = max(120, numblogs)
+    print(numblogs, blog_counter)
     soup = BeautifulSoup(html, 'html.parser')
     num_pages = (int(numblogs) / 6) +1
     page_blogs = soup.find(attrs={'class': 'blogPosts'})
@@ -46,7 +48,7 @@ def blogplot(user='ak73'):
                 else:
                     comments_db = comments_db.append({'user': cuser, 'num_comments': 1}, ignore_index=True)
 
-    blog_links = ('https://tengaged.com/blog/' + user + '/page/' + str(i) for i in range(1, max(30, num_pages + 1)))
+    blog_links = ('https://tengaged.com/blog/' + user + '/page/' + str(i) for i in range(1, max(20, num_pages + 1)))
 
     ## first multi process
     p = Pool(processes=10)
@@ -117,11 +119,12 @@ def main():
     form = cgi.FieldStorage()
     if "param1" in form:
         user = form["param1"].value
-        blogplot(user)
+        if os.path.exists('blog_data/' + user):
+            if os.path.getmtime('blog_data/' + user) < 1209600:
+                blogplot(user)
         print('blog_data/' + user)
 
 cgitb.enable(display=0, logdir='./logs/')
-blogplot('violets')
 
 #main()
 print "Content-type: text/html\n"

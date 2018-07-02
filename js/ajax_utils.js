@@ -54,6 +54,7 @@ function handleResponse(request,
       responseHandler(JSON.parse(request.responseText));
     }
     else {
+      console.log(request.responseText);
       responseHandler(request.responseText);
     }
   }

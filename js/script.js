@@ -1,5 +1,4 @@
 (function (global) {
-
 var dc = {};
 
 var statshtml = "stats.html";
@@ -29,42 +28,49 @@ var showLoading = function (selector) {
 // On page load (before images or CSS)
 $('button').bind("click",function(event) {
 // On first load, show home view
+$('.visibility').css("visibility","visible");
 var User = '?param1=' + document.querySelector(".form-control").value;
+
 $ajaxUtils.sendGetRequest(
   statshtml,
   function (responseText) {
-    document.querySelector(".container .thanks").remove()
-     document.querySelector(".container .replace").innerHTML = responseText;
+     document.querySelector(".thanks").remove()
+     document.querySelector(".replace").innerHTML = responseText;
   },
   false);
+
+var all_badges =  $('.badge');
+
 $ajaxUtils.sendGetRequest(
   base_python + User,
   function (responseText) {
-    var all_badges = document.querySelectorAll(".container .replace li .badge");
-        console.log(responseText);
-        for( badge in all_badges) {
-          all_badges[badge].innerHTML = responseText[badge];
-        }
+	console.log(responseText);
+        $(".media-object")[0].setAttribute('src', responseText[0]);
+        $('.badge')[0].innerHTML = responseText[1];
+        $(".badge")[1].innerHTML = responseText[2];
+        $(".badge")[2].innerHTML = responseText[3];
   },
   false);
 $ajaxUtils.sendGetRequest(
   game_python + User,
   function (responseText) {
-      var media = document.querySelectorAll(".media-object");
-      media[1].setAttribute('src', responseText);
+      $('.badge')[3].innerHTML = responseText[0];
+      $(".media-object")[1].setAttribute('src', responseText[1]);
   },
   false);
 $ajaxUtils.sendGetRequest(
   gift_python+ User,
   function (responseText) {
-      var media = document.querySelectorAll(".media-object");
-      media[2].setAttribute('src', responseText);  },
+      $('.badge')[4].innerHTML = responseText[0];
+      $('.badge')[5].innerHTML = responseText[1];
+      $(".media-object")[2].setAttribute('src', responseText[2]);  },
   false);
 $ajaxUtils.sendGetRequest(
   blog_python+ User,
   function (responseText) {
-      var media = document.querySelectorAll(".media-object");
-      media[3].setAttribute('src', responseText);  },
+      $('.badge')[6].innerHTML = responseText[0];
+      $('.badge')[7].innerHTML = responseText[1];
+      $(".media-object")[3].setAttribute('src', responseText[2]);  },
   false);
 });
 

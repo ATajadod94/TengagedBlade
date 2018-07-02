@@ -15,12 +15,9 @@ import cgi
 
 def gameplot(user='alireza1373'):
     html = requests.get('https://tengaged.com/user/' + user).text
-    ##karma, rank = re.findall('<span class="remark">(.*?)</span>', html)[0:2]
     soup = BeautifulSoup(html, 'html.parser')
-    games_played_default = soup.findAll(attrs={'class': 'remark'})[1].text;
     karma = soup.find(attrs={'class': 'remark'}).text
-    #  rank = soup.find(attrs={'class': 'miniadrank'}).text
-    #last_activity = soup.findAll(attrs={'class': 'remark'})[2].text;
+    soup = BeautifulSoup(html, 'html.parser')
     game_pages = soup.findAll(attrs={'class': 'page'})
     pages = [int(_.text) for _ in game_pages]
     game_pages = max(pages)
@@ -36,7 +33,6 @@ def gameplot(user='alireza1373'):
             placing = agame.find_all('a')[0].text
             placing = filter(str.isdigit, placing.__str__())
             fast = agame.attrs['class']
-
             fast = agame.text.__contains__('FF') or agame.text.__contains__('FDay')
             game = agame.find_all('a')[0].attrs['class'][0]
             if game.startswith('ghbut'):
@@ -56,7 +52,10 @@ def gameplot(user='alireza1373'):
             if game.startswith('gsbut'):
                 allgames = allgames.append({'type': 'stars', 'placing': int(placing)}, ignore_index=True)
 
+
     realgames = allgames.__len__()
+    kpg = karma/realgames
+    print(kpg)
     lm = sns.swarmplot(allgames.type, allgames.placing.astype(int),
                        order=['casting', 'fasting', 'rookies', 'frooks', 'survivor', 'hunger', 'stars']).set_title(user)
     axes = lm.axes

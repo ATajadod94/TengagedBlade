@@ -20,7 +20,7 @@ def giftplot(user='ak73'):
     num_pages = np.ceil(float(num_gifts) / 15)
     soup = BeautifulSoup(html, 'html.parser')
     gifts_db = pd.DataFrame(columns=['user', 'num_gifts'])
-
+    anon =0;
     for i in range(1, int(num_pages) + 1):
         html = requests.post('https://tengaged.com/gifts/' + user, {'action': 'loadGifts', 'p': i})
         soup = BeautifulSoup(html.text, 'html.parser')
@@ -30,6 +30,7 @@ def giftplot(user='ak73'):
             try:
                 cuser = gifter.find_all('a')[0].text.__str__()
             except:
+                anon +=1;
                 continue
             if cuser in list(gifts_db.user):
                 index = gifts_db.user[(gifts_db.user == cuser)].index[0]
@@ -39,6 +40,7 @@ def giftplot(user='ak73'):
                 gifts_db = gifts_db.append({'user': cuser, 'num_gifts': 1}, ignore_index=True)
 
     gifts_db.num_gifts = gifts_db.num_gifts.astype(int)
+    print(num_gifts,anon)
     try:
         top10 = (gifts_db.nlargest(10, 'num_gifts'))
     except:
