@@ -20,7 +20,7 @@ def giftplot(user='ak73'):
     num_pages = np.ceil(float(num_gifts) / 15)
     soup = BeautifulSoup(html, 'html.parser')
     gifts_db = pd.DataFrame(columns=['user', 'num_gifts'])
-
+    anon = 0
     for i in range(1, int(num_pages) + 1):
         html = requests.post('https://tengaged.com/gifts/' + user, {'action': 'loadGifts', 'p': i})
         soup = BeautifulSoup(html.text, 'html.parser')
@@ -30,6 +30,7 @@ def giftplot(user='ak73'):
             try:
                 cuser = gifter.find_all('a')[0].text.__str__()
             except:
+                anon +=1
                 continue
             if cuser in list(gifts_db.user):
                 index = gifts_db.user[(gifts_db.user == cuser)].index[0]
@@ -48,13 +49,14 @@ def giftplot(user='ak73'):
     b = a.axes
     b.set_xticklabels(b.get_xticklabels(), rotation=40, ha="right")
     plt.savefig('/var/www/www.tengagedblade.com/gift_data/' + user)
+    print 'gift_data/' + user, int(num_gifts), anon
 
 def main():
     form = cgi.FieldStorage()
     if "param1" in form:
         user = form["param1"].value
         giftplot(user)
-        print('gift_data/' + user)
+
 
 giftplot('suzycroatia')
 cgitb.enable(display=0, logdir='./logs/')

@@ -13,7 +13,7 @@ def basestats(user):
     karma = soup.find(attrs={'class': 'remark'}).text
     games_played_default = soup.findAll(attrs={'class': 'remark'})[1].text;
 
-    print([avi, karma, games_played_default, int(karma)/int(games_played_default)])
+    print str(avi), int(karma), int(games_played_default), int(karma)/int(games_played_default)
 
 def main():
     form = cgi.FieldStorage()

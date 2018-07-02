@@ -60,11 +60,14 @@ def gameplot(user='alireza1373'):
                 allgames = allgames.append({'type': 'stars', 'placing': int(placing)}, ignore_index=True)
 
     realgames = allgames.__len__()
+    realkpg = int(karma)/realgames
     lm = sns.swarmplot(allgames.type, allgames.placing.astype(int),
                        order=['casting', 'fasting', 'rookies', 'frooks', 'survivor', 'hunger', 'stars']).set_title(user)
     axes = lm.axes
     axes.set_yticks(range(1, 31))
-    plt.savefig('/var/www/www.tengagedblade.com/y' + user)
+    plt.savefig('/var/www/www.tengagedblade.com/game_data/' + user)
+    print 'game_data/' + user, int(realkpg)
+
     # plt.show()
 
 def main():
@@ -72,7 +75,6 @@ def main():
     if "param1" in form:
         user = form["param1"].value
         gameplot(user)
-        print('game_data/' + user)
 
 cgitb.enable(display=0, logdir='./logs/')
 

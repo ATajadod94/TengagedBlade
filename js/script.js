@@ -44,7 +44,7 @@ var all_badges =  $('.badge');
 $ajaxUtils.sendGetRequest(
   base_python + User,
   function (responseText) {
-	console.log(responseText);
+        responseText = responseText.split(",")
         $(".media-object")[0].setAttribute('src', responseText[0]);
         $('.badge')[0].innerHTML = responseText[1];
         $(".badge")[1].innerHTML = responseText[2];
@@ -54,6 +54,7 @@ $ajaxUtils.sendGetRequest(
 $ajaxUtils.sendGetRequest(
   game_python + User,
   function (responseText) {
+      responseText = responseText.splot(",")
       $('.badge')[3].innerHTML = responseText[0];
       $(".media-object")[1].setAttribute('src', responseText[1]);
   },
@@ -61,6 +62,7 @@ $ajaxUtils.sendGetRequest(
 $ajaxUtils.sendGetRequest(
   gift_python+ User,
   function (responseText) {
+      responseText = responseText.split(",")
       $('.badge')[4].innerHTML = responseText[0];
       $('.badge')[5].innerHTML = responseText[1];
       $(".media-object")[2].setAttribute('src', responseText[2]);  },
