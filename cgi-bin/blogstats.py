@@ -49,7 +49,7 @@ def blogplot(user='ak73'):
     blog_links = ('https://tengaged.com/blog/' + user + '/page/' + str(i) for i in range(1, max(20, num_pages + 1)))
 
     ## first multi process
-    p = Pool(processes=10)
+    p = Pool(processes=30)
     page_html = p.map(gethtml, blog_links)  ## passing blog_links as a generator
     p.close()
     blog_links = list()
@@ -61,7 +61,7 @@ def blogplot(user='ak73'):
             if blog.has_attr('rel') and blog.attrs['rel'] and blog.attrs['rel'][0].startswith('bookmark'):
                 blog_links += ['https://tengaged.com' + blog.attrs['href'].__str__()]
 
-    p = Pool(processes=10)
+    p = Pool(processes=30)
     blot_html_all = p.map(gethtml, blog_links)# passing blog_links as a generator
     p.close()
 
@@ -99,7 +99,9 @@ def blogplot(user='ak73'):
     b = a.axes
     b.set_xticklabels(b.get_xticklabels(), rotation=40, ha="right")
     plt.savefig('/var/www/www.tengagedblade.com/blog_data/' + user)
-
+    fig_loc  = 'blog_data/' + user
+    num_blogs = num_pages * 6
+    print fig_loc,  120, num_blogs
 
 def gethtml(url, user_agent='tblade' , num_retries = 5):
     headers = {'User-agent': user_agent}
@@ -117,13 +119,7 @@ def main():
     form = cgi.FieldStorage()
     if "param1" in form:
         user = form["param1"].value
-        if os.path.exists('blog_data/' + user):
-            if os.path.getmtime('blog_data/' + user) < 1209600:
-                print('blog_data/' + user)
-                return
         blogplot(user)
-        print('blog_data/' + user)
-
 cgitb.enable(display=0, logdir='./logs/')
 
 #main()

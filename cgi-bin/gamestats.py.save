@@ -66,8 +66,8 @@ def gameplot(user='alireza1373'):
     axes = lm.axes
     axes.set_yticks(range(1, 31))
     plt.savefig('/var/www/www.tengagedblade.com/game_data/' + user)
-    game_data = 'game_data/' + user 
-    print game_data, int(realkpg)
+    user_data = 'game_data/' + user
+    print user_data, int(kpg)
 
     # plt.show()
 

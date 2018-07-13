@@ -1,0 +1,99 @@
+<body bgcolor="#f0f0f8">
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#6622aa">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>&lt;type 'exceptions.AttributeError'&gt;</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial">Python 2.7.13: /usr/bin/python2.7<br>Mon Jul  2 21:56:37 2018</font></td></tr></table>
+    
+<p>A problem occurred in a Python script.  Here is the sequence of
+function calls leading up to the error, in the order they occurred.</p>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///var/www/www.tengagedblade.com/cgi-bin/blogstats.py">/var/www/www.tengagedblade.com/cgi-bin/blogstats.py</a> in <strong><module></strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;128</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;129</small>&nbsp;#main()<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;130</small>&nbsp;print&nbsp;"Content-type:&nbsp;text/html\n"<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;131</small>&nbsp;print<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;132</small>&nbsp;main()<br>
+</tt></td></tr>
+<tr><td><small><font color="#909090"><strong>main</strong>&nbsp;= &lt;function main&gt;</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///var/www/www.tengagedblade.com/cgi-bin/blogstats.py">/var/www/www.tengagedblade.com/cgi-bin/blogstats.py</a> in <strong>main</strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;122</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print('blog_data/'&nbsp;+&nbsp;user)<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;123</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;124</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blogplot(user)<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;125</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print('blog_data/'&nbsp;+&nbsp;user)<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;126</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><em>global</em> <strong>blogplot</strong>&nbsp;= &lt;function blogplot&gt;, <strong>user</strong>&nbsp;= 'ak73'</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///var/www/www.tengagedblade.com/cgi-bin/blogstats.py">/var/www/www.tengagedblade.com/cgi-bin/blogstats.py</a> in <strong>blogplot</strong>(user='ak73')</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;51</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;##&nbsp;first&nbsp;multi&nbsp;process<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;52</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p&nbsp;=&nbsp;Pool(processes=10)<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;53</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;page_html&nbsp;=&nbsp;p.map(gethtml,&nbsp;blog_links)&nbsp;&nbsp;##&nbsp;passing&nbsp;blog_links&nbsp;as&nbsp;a&nbsp;generator<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;54</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p.close()<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;55</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blog_links&nbsp;=&nbsp;list()<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090">page_html <em>undefined</em>, <strong>p</strong>&nbsp;= &lt;multiprocessing.pool.Pool object&gt;, p.<strong>map</strong>&nbsp;= &lt;bound method Pool.map of &lt;multiprocessing.pool.Pool object&gt;&gt;, <em>global</em> <strong>gethtml</strong>&nbsp;= &lt;function gethtml&gt;, <strong>blog_links</strong>&nbsp;= &lt;generator object &lt;genexpr&gt;&gt;</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///usr/lib/python2.7/multiprocessing/pool.py">/usr/lib/python2.7/multiprocessing/pool.py</a> in <strong>map</strong>(self=&lt;multiprocessing.pool.Pool object&gt;, func=&lt;function gethtml&gt;, iterable=&lt;generator object &lt;genexpr&gt;&gt;, chunksize=None)</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;249</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'''<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;250</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assert&nbsp;self._state&nbsp;==&nbsp;RUN<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;251</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;self.map_async(func,&nbsp;iterable,&nbsp;chunksize).get()<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;252</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;253</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;imap(self,&nbsp;func,&nbsp;iterable,&nbsp;chunksize=1):<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><strong>self</strong>&nbsp;= &lt;multiprocessing.pool.Pool object&gt;, self.<strong>map_async</strong>&nbsp;= &lt;bound method Pool.map_async of &lt;multiprocessing.pool.Pool object&gt;&gt;, <strong>func</strong>&nbsp;= &lt;function gethtml&gt;, <strong>iterable</strong>&nbsp;= &lt;generator object &lt;genexpr&gt;&gt;, <strong>chunksize</strong>&nbsp;= None, ).get <em>undefined</em></font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///usr/lib/python2.7/multiprocessing/pool.py">/usr/lib/python2.7/multiprocessing/pool.py</a> in <strong>get</strong>(self=&lt;multiprocessing.pool.MapResult object&gt;, timeout=None)</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;565</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;self._value<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;566</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;567</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise&nbsp;self._value<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;568</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;569</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;_set(self,&nbsp;i,&nbsp;obj):<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><strong>self</strong>&nbsp;= &lt;multiprocessing.pool.MapResult object&gt;, self.<strong>_value</strong>&nbsp;= AttributeError("'Response' object has no attribute 'error'",)</font></small></td></tr></table><p><strong>&lt;type 'exceptions.AttributeError'&gt;</strong>: 'Response' object has no attribute 'error'
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>args&nbsp;=
+("'Response' object has no attribute 'error'",)
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>message&nbsp;=
+"'Response' object has no attribute 'error'"
+
+
+<!-- The above is a description of an error in a Python program, formatted
+     for a Web browser because the 'cgitb' module was enabled.  In case you
+     are not reading this in a Web browser, here is the original traceback:
+
+Traceback (most recent call last):
+  File "/var/www/www.tengagedblade.com/cgi-bin/blogstats.py", line 132, in &lt;module&gt;
+    main()
+  File "/var/www/www.tengagedblade.com/cgi-bin/blogstats.py", line 124, in main
+    blogplot(user)
+  File "/var/www/www.tengagedblade.com/cgi-bin/blogstats.py", line 53, in blogplot
+    page_html = p.map(gethtml, blog_links)  ## passing blog_links as a generator
+  File "/usr/lib/python2.7/multiprocessing/pool.py", line 251, in map
+    return self.map_async(func, iterable, chunksize).get()
+  File "/usr/lib/python2.7/multiprocessing/pool.py", line 567, in get
+    raise self._value
+AttributeError: 'Response' object has no attribute 'error'
+
+-->

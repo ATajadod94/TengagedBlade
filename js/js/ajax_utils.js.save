@@ -23,6 +23,7 @@ function getRequestObject() {
 // Makes an Ajax GET request to 'requestUrl'
 ajaxUtils.sendGetRequest =
   function(requestUrl, responseHandler, isJsonResponse) {
+    console.log(requestUrl)
     var request = getRequestObject();
     request.onreadystatechange =
       function() {
@@ -46,18 +47,31 @@ function handleResponse(request,
 
     // Default to isJsonResponse = true
     if (isJsonResponse == undefined) {
-      isJsonResponse = true;
+      isJsonResponse = false;
     }
 
     if (isJsonResponse) {
       responseHandler(JSON.parse(request.responseText));
     }
     else {
-      console.log(request.responseText);
       responseHandler(request.responseText);
     }
   }
 }
+
+ajaxUtils.runPyScript =
+  function(requestUrl, responseHandler, isJsonResponse) {
+    var request = getRequestObject();
+    request.onreadystatechange =
+      function() {
+        handleResponse(request,
+                       responseHandler,
+                       isJsonResponse);
+      };
+    request.open("POST", requestUrl, true);
+    request.send(null); // for POST only
+  };
+
 
 // Expose utility to the global object
 global.$ajaxUtils = ajaxUtils;

@@ -23,6 +23,7 @@ function getRequestObject() {
 // Makes an Ajax GET request to 'requestUrl'
 ajaxUtils.sendGetRequest =
   function(requestUrl, responseHandler, isJsonResponse) {
+    console.log(requestUrl)
     var request = getRequestObject();
     request.onreadystatechange =
       function() {
@@ -53,7 +54,6 @@ function handleResponse(request,
       responseHandler(JSON.parse(request.responseText));
     }
     else {
-      console.log(request.responseText);
       responseHandler(request.responseText);
     }
   }

@@ -1,0 +1,53 @@
+body{
+    font-family: 'Nunito Semibold';
+    text-align: center;
+  }
+.bg {
+    /* The image used */
+    background-image: url("../Images/background.jpg");
+
+    /* Full height */
+		height: 100%
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron {
+	background: transparent;
+}
+
+#leftimage{
+  position: absolute;
+    left: 5px;
+    top: 10px;
+}
+#rightimage {
+  position: absolute;
+    right: 5px;
+    top: 10px;
+}
+
+
+.remark {
+  color:#424242;
+  font-weight:bold;
+  background-color:#eee;
+  padding-left:2px;
+  padding-right:2px;
+}
+
+
+
+
+
+
+#stats_content > *{
+          padding: 30px;
+          background: #3bbced;
+        }
+.input-group{
+	width: 50%;
+	margin-left: 25%;
+}

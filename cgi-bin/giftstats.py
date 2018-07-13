@@ -24,7 +24,7 @@ def giftplot(user='ak73'):
     for i in range(1, int(num_pages) + 1):
         html = requests.post('https://tengaged.com/gifts/' + user, {'action': 'loadGifts', 'p': i})
         soup = BeautifulSoup(html.text, 'html.parser')
-        gifts = soup.findAll(attrs={'class': 'gifts imgMsgList big'})[0]
+	gifts = soup.findAll(attrs={'class': 'gifts imgMsgList big'})[0]
         gifters = gifts.findAll(attrs={'class': 'message'})
         for gifter in gifters:
             try:
@@ -49,7 +49,8 @@ def giftplot(user='ak73'):
     b = a.axes
     b.set_xticklabels(b.get_xticklabels(), rotation=40, ha="right")
     plt.savefig('/var/www/www.tengagedblade.com/gift_data/' + user)
-    print 'gift_data/' + user, int(num_gifts), anon
+    gift_plot = 'gift_data/' + user
+    print gift_plot, int(num_gifts), "NOTTELLING"
 
 def main():
     form = cgi.FieldStorage()
@@ -57,8 +58,7 @@ def main():
         user = form["param1"].value
         giftplot(user)
 
-
-giftplot('suzycroatia')
+#giftplot('suzycroatia')
 cgitb.enable(display=0, logdir='./logs/')
 #main()
 print "Content-type: text/html\n"
