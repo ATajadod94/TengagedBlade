@@ -6,7 +6,7 @@ import re
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-import numpy as np
+import random
 import matplotlib
 matplotlib.use('AGG')
 import matplotlib.pyplot as plt
@@ -54,7 +54,7 @@ def blogplot(user='ak73'):
     p.close()
     blog_links = list()
     for html in page_html:
-        soup = BeautifulSoup(html.text, "lxml")
+        soup = BeautifulSoup(html, "lxml")
         page_blogs = soup.find(attrs={'class': 'blogPosts'})
         blogs = page_blogs.findAll('a')
         for blog in blogs:
@@ -101,19 +101,16 @@ def blogplot(user='ak73'):
     plt.savefig('/var/www/www.tengagedblade.com/blog_data/' + user)
     fig_loc  = 'blog_data/' + user
     num_blogs = num_pages * 6
-    print fig_loc,  120, num_blogs
+    print fig_loc,  120, random.random()
 
-def gethtml(url, user_agent='tblade' , num_retries = 5):
+def gethtml(url, user_agent='tblade' , num_retries = 2):
     headers = {'User-agent': user_agent}
     url_html = requests.get(url)
     if url_html.ok:
         return url_html
-    elif url_html.error:
-        print('Download error:', url_html.error.reason)
+    else:
         if num_retries > 0:
-            if hasattr(url_html.error, 'code') and 500 <= url_html.error.code < 600:
-                # retry 5XX HTTP errors
-                return gethtml(url, user_agent, num_retries - 1)
+            return gethtml(url, user_agent, num_retries - 1)
 
 def main():
     form = cgi.FieldStorage()
@@ -123,6 +120,6 @@ def main():
 cgitb.enable(display=0, logdir='./logs/')
 
 #main()
+blogplot('ak73')
 print "Content-type: text/html\n"
 print
-main()

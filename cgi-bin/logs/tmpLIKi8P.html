@@ -1,0 +1,158 @@
+<body bgcolor="#f0f0f8">
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#6622aa">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>&lt;type 'exceptions.KeyboardInterrupt'&gt;</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial">Python 2.7.14: /Users/Ali/miniconda3/envs/py27/bin/python<br>Thu Jul 12 22:32:22 2018</font></td></tr></table>
+    
+<p>A problem occurred in a Python script.  Here is the sequence of
+function calls leading up to the error, in the order they occurred.</p>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///Applications/PyCharm.app/Contents/helpers/pydev/pydevd.py">/Applications/PyCharm.app/Contents/helpers/pydev/pydevd.py</a> in <strong><module></strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;1664</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;setup['cmd-line']:<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;1665</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;debugger.wait_for_commands(globals)<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;1666</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;1667</small>&nbsp;if&nbsp;__name__&nbsp;==&nbsp;'__main__':<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;1668</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;main()<br>
+</tt></td></tr>
+<tr><td><small><font color="#909090"><strong>main</strong>&nbsp;= &lt;function main&gt;</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///Applications/PyCharm.app/Contents/helpers/pydev/pydevd.py">/Applications/PyCharm.app/Contents/helpers/pydev/pydevd.py</a> in <strong>main</strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;1660</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;connected&nbsp;=&nbsp;True&nbsp;&nbsp;#&nbsp;Mark&nbsp;that&nbsp;we're&nbsp;connected&nbsp;when&nbsp;started&nbsp;from&nbsp;inside&nbsp;ide.<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;1661</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;1662</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;globals&nbsp;=&nbsp;debugger.run(setup['file'],&nbsp;None,&nbsp;None,&nbsp;is_module)<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;1663</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;1664</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;setup['cmd-line']:<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><em>builtin</em> <strong>globals</strong>&nbsp;= &lt;built-in function globals&gt;, <strong>debugger</strong>&nbsp;= &lt;__main__.PyDB instance&gt;, debugger.<strong>run</strong>&nbsp;= &lt;bound method PyDB.run of &lt;__main__.PyDB instance&gt;&gt;, <strong>setup</strong>&nbsp;= {'DEBUG_RECORD_SOCKET_READS': False, 'client': '127.0.0.1', 'cmd-line': True, 'file': '/Users/Ali/Desktop/Personal_Projects/Tengaged/www.tengagedblade.com/cgi-bin/blogstats.py', 'module': False, 'multiproc': True, 'multiprocess': False, 'port': 52459, 'print-in-debugger-startup': False, 'qt-support': 'auto', ...}, <em>builtin</em> <strong>None</strong>&nbsp;= None, <strong>is_module</strong>&nbsp;= False</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///Applications/PyCharm.app/Contents/helpers/pydev/pydevd.py">/Applications/PyCharm.app/Contents/helpers/pydev/pydevd.py</a> in <strong>run</strong>(self=&lt;__main__.PyDB instance&gt;, file='/Users/Ali/Desktop/Personal_Projects/Tengaged/www.tengagedblade.com/cgi-bin/blogstats.py', globals={'BeautifulSoup': &lt;class 'bs4.BeautifulSoup'&gt;, 'Pool': &lt;function Pool&gt;, '__builtins__': &lt;module '__builtin__' (built-in)&gt;, '__doc__': None, '__file__': '/Users/Ali/Desktop/Personal_Projects/Tengaged/www.tengagedblade.com/cgi-bin/blogstats.py', '__name__': '__main__', '__package__': None, 'blogplot': &lt;function blogplot&gt;, 'cgi': &lt;module 'cgi' from '/Users/Ali/miniconda3/envs/py27/lib/python2.7/cgi.pyc'&gt;, 'cgitb': &lt;module 'cgitb' from '/Users/Ali/miniconda3/envs/py27/lib/python2.7/cgitb.pyc'&gt;, ...}, locals={'BeautifulSoup': &lt;class 'bs4.BeautifulSoup'&gt;, 'Pool': &lt;function Pool&gt;, '__builtins__': &lt;module '__builtin__' (built-in)&gt;, '__doc__': None, '__file__': '/Users/Ali/Desktop/Personal_Projects/Tengaged/www.tengagedblade.com/cgi-bin/blogstats.py', '__name__': '__main__', '__package__': None, 'blogplot': &lt;function blogplot&gt;, 'cgi': &lt;module 'cgi' from '/Users/Ali/miniconda3/envs/py27/lib/python2.7/cgi.pyc'&gt;, 'cgitb': &lt;module 'cgitb' from '/Users/Ali/miniconda3/envs/py27/lib/python2.7/cgitb.pyc'&gt;, ...}, is_module=False, set_trace=True)</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;1070</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;1071</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;not&nbsp;is_module:<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;1072</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pydev_imports.execfile(file,&nbsp;globals,&nbsp;locals)&nbsp;&nbsp;#&nbsp;execute&nbsp;the&nbsp;script<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;1073</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;1074</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;treat&nbsp;':'&nbsp;as&nbsp;a&nbsp;seperator&nbsp;between&nbsp;module&nbsp;and&nbsp;entry&nbsp;point&nbsp;function<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><em>global</em> <strong>pydev_imports</strong>&nbsp;= &lt;module '_pydev_bundle.pydev_imports' from '/App...ts/helpers/pydev/_pydev_bundle/pydev_imports.py'&gt;, pydev_imports.<strong>execfile</strong>&nbsp;= &lt;built-in function execfile&gt;, <strong>file</strong>&nbsp;= '/Users/Ali/Desktop/Personal_Projects/Tengaged/www.tengagedblade.com/cgi-bin/blogstats.py', <strong>globals</strong>&nbsp;= {'BeautifulSoup': &lt;class 'bs4.BeautifulSoup'&gt;, 'Pool': &lt;function Pool&gt;, '__builtins__': &lt;module '__builtin__' (built-in)&gt;, '__doc__': None, '__file__': '/Users/Ali/Desktop/Personal_Projects/Tengaged/www.tengagedblade.com/cgi-bin/blogstats.py', '__name__': '__main__', '__package__': None, 'blogplot': &lt;function blogplot&gt;, 'cgi': &lt;module 'cgi' from '/Users/Ali/miniconda3/envs/py27/lib/python2.7/cgi.pyc'&gt;, 'cgitb': &lt;module 'cgitb' from '/Users/Ali/miniconda3/envs/py27/lib/python2.7/cgitb.pyc'&gt;, ...}, <strong>locals</strong>&nbsp;= {'BeautifulSoup': &lt;class 'bs4.BeautifulSoup'&gt;, 'Pool': &lt;function Pool&gt;, '__builtins__': &lt;module '__builtin__' (built-in)&gt;, '__doc__': None, '__file__': '/Users/Ali/Desktop/Personal_Projects/Tengaged/www.tengagedblade.com/cgi-bin/blogstats.py', '__name__': '__main__', '__package__': None, 'blogplot': &lt;function blogplot&gt;, 'cgi': &lt;module 'cgi' from '/Users/Ali/miniconda3/envs/py27/lib/python2.7/cgi.pyc'&gt;, 'cgitb': &lt;module 'cgitb' from '/Users/Ali/miniconda3/envs/py27/lib/python2.7/cgitb.pyc'&gt;, ...}</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///Users/Ali/Desktop/Personal_Projects/Tengaged/www.tengagedblade.com/cgi-bin/blogstats.py">/Users/Ali/Desktop/Personal_Projects/Tengaged/www.tengagedblade.com/cgi-bin/blogstats.py</a> in <strong><module></strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;124</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;125</small>&nbsp;#main()<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;126</small>&nbsp;blogplot('ak73')<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;127</small>&nbsp;print&nbsp;"Content-type:&nbsp;text/html\n"<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;128</small>&nbsp;print<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><strong>blogplot</strong>&nbsp;= &lt;function blogplot&gt;</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///Users/Ali/Desktop/Personal_Projects/Tengaged/www.tengagedblade.com/cgi-bin/blogstats.py">/Users/Ali/Desktop/Personal_Projects/Tengaged/www.tengagedblade.com/cgi-bin/blogstats.py</a> in <strong>blogplot</strong>(user='ak73')</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;51</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;##&nbsp;first&nbsp;multi&nbsp;process<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;52</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p&nbsp;=&nbsp;Pool(processes=30)<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;53</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;page_html&nbsp;=&nbsp;p.map(gethtml,&nbsp;blog_links)&nbsp;&nbsp;##&nbsp;passing&nbsp;blog_links&nbsp;as&nbsp;a&nbsp;generator<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;54</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p.close()<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;55</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blog_links&nbsp;=&nbsp;list()<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090">page_html <em>undefined</em>, <strong>p</strong>&nbsp;= &lt;multiprocessing.pool.Pool object&gt;, p.<strong>map</strong>&nbsp;= &lt;bound method Pool.map of &lt;multiprocessing.pool.Pool object&gt;&gt;, <em>global</em> <strong>gethtml</strong>&nbsp;= &lt;function gethtml&gt;, <strong>blog_links</strong>&nbsp;= &lt;generator object &lt;genexpr&gt;&gt;</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///Users/Ali/miniconda3/envs/py27/lib/python2.7/multiprocessing/pool.py">/Users/Ali/miniconda3/envs/py27/lib/python2.7/multiprocessing/pool.py</a> in <strong>map</strong>(self=&lt;multiprocessing.pool.Pool object&gt;, func=&lt;function gethtml&gt;, iterable=&lt;generator object &lt;genexpr&gt;&gt;, chunksize=None)</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;251</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'''<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;252</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assert&nbsp;self._state&nbsp;==&nbsp;RUN<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;253</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;self.map_async(func,&nbsp;iterable,&nbsp;chunksize).get()<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;254</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;255</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;imap(self,&nbsp;func,&nbsp;iterable,&nbsp;chunksize=1):<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><strong>self</strong>&nbsp;= &lt;multiprocessing.pool.Pool object&gt;, self.<strong>map_async</strong>&nbsp;= &lt;bound method Pool.map_async of &lt;multiprocessing.pool.Pool object&gt;&gt;, <strong>func</strong>&nbsp;= &lt;function gethtml&gt;, <strong>iterable</strong>&nbsp;= &lt;generator object &lt;genexpr&gt;&gt;, <strong>chunksize</strong>&nbsp;= None, ).get <em>undefined</em></font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///Users/Ali/miniconda3/envs/py27/lib/python2.7/multiprocessing/pool.py">/Users/Ali/miniconda3/envs/py27/lib/python2.7/multiprocessing/pool.py</a> in <strong>get</strong>(self=&lt;multiprocessing.pool.MapResult object&gt;, timeout=None)</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;564</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;565</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;get(self,&nbsp;timeout=None):<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;566</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.wait(timeout)<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;567</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;not&nbsp;self._ready:<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;568</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise&nbsp;TimeoutError<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><strong>self</strong>&nbsp;= &lt;multiprocessing.pool.MapResult object&gt;, self.<strong>wait</strong>&nbsp;= &lt;bound method MapResult.wait of &lt;multiprocessing.pool.MapResult object&gt;&gt;, <strong>timeout</strong>&nbsp;= None</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///Users/Ali/miniconda3/envs/py27/lib/python2.7/multiprocessing/pool.py">/Users/Ali/miniconda3/envs/py27/lib/python2.7/multiprocessing/pool.py</a> in <strong>wait</strong>(self=&lt;multiprocessing.pool.MapResult object&gt;, timeout=None)</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;559</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try:<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;560</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;not&nbsp;self._ready:<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;561</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self._cond.wait(timeout)<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;562</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;finally:<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;563</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self._cond.release()<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><strong>self</strong>&nbsp;= &lt;multiprocessing.pool.MapResult object&gt;, self.<strong>_cond</strong>&nbsp;= &lt;Condition(&lt;thread.lock object at 0x1a15a2fa50&gt;, 0)&gt;, self._cond.<strong>wait</strong>&nbsp;= &lt;bound method _Condition.wait of &lt;Condition(&lt;thread.lock object at 0x1a15a2fa50&gt;, 0)&gt;&gt;, <strong>timeout</strong>&nbsp;= None</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///Users/Ali/miniconda3/envs/py27/lib/python2.7/threading.py">/Users/Ali/miniconda3/envs/py27/lib/python2.7/threading.py</a> in <strong>wait</strong>(self=&lt;Condition(&lt;thread.lock object at 0x1a15a2fa50&gt;, 0)&gt;, timeout=None)</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;338</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try:&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;restore&nbsp;state&nbsp;no&nbsp;matter&nbsp;what&nbsp;(e.g.,&nbsp;KeyboardInterrupt)<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;339</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;timeout&nbsp;is&nbsp;None:<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;340</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;waiter.acquire()<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;341</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;__debug__:<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;342</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self._note("%s.wait():&nbsp;got&nbsp;it",&nbsp;self)<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><strong>waiter</strong>&nbsp;= &lt;thread.lock object&gt;, waiter.<strong>acquire</strong>&nbsp;= &lt;built-in method acquire of thread.lock object&gt;</font></small></td></tr></table><p><strong>&lt;type 'exceptions.KeyboardInterrupt'&gt;</strong>: 
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>args&nbsp;=
+()
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>message&nbsp;=
+''
+
+
+<!-- The above is a description of an error in a Python program, formatted
+     for a Web browser because the 'cgitb' module was enabled.  In case you
+     are not reading this in a Web browser, here is the original traceback:
+
+Traceback (most recent call last):
+  File "/Applications/PyCharm.app/Contents/helpers/pydev/pydevd.py", line 1668, in &lt;module&gt;
+    main()
+  File "/Applications/PyCharm.app/Contents/helpers/pydev/pydevd.py", line 1662, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Applications/PyCharm.app/Contents/helpers/pydev/pydevd.py", line 1072, in run
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "/Users/Ali/Desktop/Personal_Projects/Tengaged/www.tengagedblade.com/cgi-bin/blogstats.py", line 126, in &lt;module&gt;
+  File "/Users/Ali/Desktop/Personal_Projects/Tengaged/www.tengagedblade.com/cgi-bin/blogstats.py", line 53, in blogplot
+    page_html = p.map(gethtml, blog_links)  ## passing blog_links as a generator
+  File "/Users/Ali/miniconda3/envs/py27/lib/python2.7/multiprocessing/pool.py", line 253, in map
+    return self.map_async(func, iterable, chunksize).get()
+  File "/Users/Ali/miniconda3/envs/py27/lib/python2.7/multiprocessing/pool.py", line 566, in get
+    self.wait(timeout)
+  File "/Users/Ali/miniconda3/envs/py27/lib/python2.7/multiprocessing/pool.py", line 561, in wait
+    self._cond.wait(timeout)
+  File "/Users/Ali/miniconda3/envs/py27/lib/python2.7/threading.py", line 340, in wait
+    waiter.acquire()
+KeyboardInterrupt
+
+-->
