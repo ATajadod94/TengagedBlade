@@ -1,0 +1,69 @@
+<body bgcolor="#f0f0f8">
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#6622aa">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>&lt;type 'exceptions.IndexError'&gt;</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial">Python 2.7.13: /usr/bin/python2.7<br>Sun Jul 15 05:35:56 2018</font></td></tr></table>
+    
+<p>A problem occurred in a Python script.  Here is the sequence of
+function calls leading up to the error, in the order they occurred.</p>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///var/www/www.tengagedblade.com/cgi-bin/gamestats.py">/var/www/www.tengagedblade.com/cgi-bin/gamestats.py</a> in <strong><module></strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;80</small>&nbsp;cgitb.enable(display=0,&nbsp;logdir='./logs/')<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;81</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;82</small>&nbsp;print&nbsp;"Content-type:&nbsp;text/html\n"<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;83</small>&nbsp;print<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;84</small>&nbsp;main()<br>
+</tt></td></tr>
+<tr><td><small><font color="#909090"><strong>main</strong>&nbsp;= &lt;function main&gt;</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///var/www/www.tengagedblade.com/cgi-bin/gamestats.py">/var/www/www.tengagedblade.com/cgi-bin/gamestats.py</a> in <strong>main</strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;76</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;"param1"&nbsp;in&nbsp;form:<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;77</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;user&nbsp;=&nbsp;form["param1"].value<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;78</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gameplot(user)<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;79</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;80</small>&nbsp;cgitb.enable(display=0,&nbsp;logdir='./logs/')<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><em>global</em> <strong>gameplot</strong>&nbsp;= &lt;function gameplot&gt;, <strong>user</strong>&nbsp;= 'Bob'</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///var/www/www.tengagedblade.com/cgi-bin/gamestats.py">/var/www/www.tengagedblade.com/cgi-bin/gamestats.py</a> in <strong>gameplot</strong>(user='Bob')</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;18</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;##karma,&nbsp;rank&nbsp;=&nbsp;re.findall('&lt;span&nbsp;class="remark"&gt;(.*?)&lt;/span&gt;',&nbsp;html)[0:2]<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;19</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;soup&nbsp;=&nbsp;BeautifulSoup(html,&nbsp;'html.parser')<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;20</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;games_played_default&nbsp;=&nbsp;soup.findAll(attrs={'class':&nbsp;'remark'})[1].text;<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;21</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;karma&nbsp;=&nbsp;soup.find(attrs={'class':&nbsp;'remark'}).text<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;22</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;&nbsp;rank&nbsp;=&nbsp;soup.find(attrs={'class':&nbsp;'miniadrank'}).text<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090">games_played_default <em>undefined</em>, <strong>soup</strong>&nbsp;= &lt;!DOCTYPE html&gt;\n\n&lt;html&gt;\n&lt;head&gt;\n&lt;title&gt;Tengag...d.com"&gt;Blog&lt;/a&gt;\n&lt;/div&gt;\n&lt;/div&gt;\n&lt;/body&gt;\n&lt;/html&gt;, soup.<strong>findAll</strong>&nbsp;= &lt;bound method BeautifulSoup.find_all of &lt;!DOCTYP....com"&gt;Blog&lt;/a&gt;\n&lt;/div&gt;\n&lt;/div&gt;\n&lt;/body&gt;\n&lt;/html&gt;&gt;, attrs <em>undefined</em></font></small></td></tr></table><p><strong>&lt;type 'exceptions.IndexError'&gt;</strong>: list index out of range
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>args&nbsp;=
+('list index out of range',)
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>message&nbsp;=
+'list index out of range'
+
+
+<!-- The above is a description of an error in a Python program, formatted
+     for a Web browser because the 'cgitb' module was enabled.  In case you
+     are not reading this in a Web browser, here is the original traceback:
+
+Traceback (most recent call last):
+  File "/var/www/www.tengagedblade.com/cgi-bin/gamestats.py", line 84, in &lt;module&gt;
+    main()
+  File "/var/www/www.tengagedblade.com/cgi-bin/gamestats.py", line 78, in main
+    gameplot(user)
+  File "/var/www/www.tengagedblade.com/cgi-bin/gamestats.py", line 20, in gameplot
+    games_played_default = soup.findAll(attrs={'class': 'remark'})[1].text;
+IndexError: list index out of range
+
+-->

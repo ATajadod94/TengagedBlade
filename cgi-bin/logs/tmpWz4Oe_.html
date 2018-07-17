@@ -1,0 +1,69 @@
+<body bgcolor="#f0f0f8">
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#6622aa">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>&lt;type 'exceptions.AttributeError'&gt;</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial">Python 2.7.13: /usr/bin/python2.7<br>Sat Jul 14 13:49:40 2018</font></td></tr></table>
+    
+<p>A problem occurred in a Python script.  Here is the sequence of
+function calls leading up to the error, in the order they occurred.</p>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///var/www/www.tengagedblade.com/cgi-bin/blogstats.py">/var/www/www.tengagedblade.com/cgi-bin/blogstats.py</a> in <strong><module></strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;121</small>&nbsp;#blogplot('ak73')<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;122</small>&nbsp;#main()<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;123</small>&nbsp;print&nbsp;"Content-type:&nbsp;text/html\n"<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;124</small>&nbsp;print<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;125</small>&nbsp;main()<br>
+</tt></td></tr>
+<tr><td><small><font color="#909090"><strong>main</strong>&nbsp;= &lt;function main&gt;</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///var/www/www.tengagedblade.com/cgi-bin/blogstats.py">/var/www/www.tengagedblade.com/cgi-bin/blogstats.py</a> in <strong>main</strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;117</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;"param1"&nbsp;in&nbsp;form:<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;118</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;user&nbsp;=&nbsp;form["param1"].value<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;119</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blogplot(user)<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;120</small>&nbsp;cgitb.enable(display=0,&nbsp;logdir='./logs/')<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;121</small>&nbsp;#blogplot('ak73')<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><em>global</em> <strong>blogplot</strong>&nbsp;= &lt;function blogplot&gt;, <strong>user</strong>&nbsp;= 'Suzycroatia'</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///var/www/www.tengagedblade.com/cgi-bin/blogstats.py">/var/www/www.tengagedblade.com/cgi-bin/blogstats.py</a> in <strong>blogplot</strong>(user='Suzycroatia')</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;55</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blog_links&nbsp;=&nbsp;list()<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;56</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;html&nbsp;in&nbsp;page_html:<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;57</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;soup&nbsp;=&nbsp;BeautifulSoup(html.text,&nbsp;"lxml")<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;58</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;page_blogs&nbsp;=&nbsp;soup.find(attrs={'class':&nbsp;'blogPosts'})<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;59</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blogs&nbsp;=&nbsp;page_blogs.findAll('a')<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><strong>soup</strong>&nbsp;= &lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n&lt;title&gt;Suzycroa...\r\n  })();  \r\n \r\n&lt;/script&gt;\n&lt;/body&gt;\n&lt;/html&gt;, <em>global</em> <strong>BeautifulSoup</strong>&nbsp;= &lt;class 'bs4.BeautifulSoup'&gt;, <strong>html</strong>&nbsp;= None, html.text <em>undefined</em></font></small></td></tr></table><p><strong>&lt;type 'exceptions.AttributeError'&gt;</strong>: 'NoneType' object has no attribute 'text'
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>args&nbsp;=
+("'NoneType' object has no attribute 'text'",)
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>message&nbsp;=
+"'NoneType' object has no attribute 'text'"
+
+
+<!-- The above is a description of an error in a Python program, formatted
+     for a Web browser because the 'cgitb' module was enabled.  In case you
+     are not reading this in a Web browser, here is the original traceback:
+
+Traceback (most recent call last):
+  File "/var/www/www.tengagedblade.com/cgi-bin/blogstats.py", line 125, in &lt;module&gt;
+    main()
+  File "/var/www/www.tengagedblade.com/cgi-bin/blogstats.py", line 119, in main
+    blogplot(user)
+  File "/var/www/www.tengagedblade.com/cgi-bin/blogstats.py", line 57, in blogplot
+    soup = BeautifulSoup(html.text, "lxml")
+AttributeError: 'NoneType' object has no attribute 'text'
+
+-->

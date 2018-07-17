@@ -1,0 +1,69 @@
+<body bgcolor="#f0f0f8">
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#6622aa">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>&lt;type 'exceptions.ZeroDivisionError'&gt;</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial">Python 2.7.13: /usr/bin/python2.7<br>Sun Jul 15 03:35:57 2018</font></td></tr></table>
+    
+<p>A problem occurred in a Python script.  Here is the sequence of
+function calls leading up to the error, in the order they occurred.</p>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///var/www/www.tengagedblade.com/cgi-bin/gamestats.py">/var/www/www.tengagedblade.com/cgi-bin/gamestats.py</a> in <strong><module></strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;80</small>&nbsp;cgitb.enable(display=0,&nbsp;logdir='./logs/')<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;81</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;82</small>&nbsp;print&nbsp;"Content-type:&nbsp;text/html\n"<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;83</small>&nbsp;print<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;84</small>&nbsp;main()<br>
+</tt></td></tr>
+<tr><td><small><font color="#909090"><strong>main</strong>&nbsp;= &lt;function main&gt;</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///var/www/www.tengagedblade.com/cgi-bin/gamestats.py">/var/www/www.tengagedblade.com/cgi-bin/gamestats.py</a> in <strong>main</strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;76</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;"param1"&nbsp;in&nbsp;form:<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;77</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;user&nbsp;=&nbsp;form["param1"].value<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;78</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gameplot(user)<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;79</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;80</small>&nbsp;cgitb.enable(display=0,&nbsp;logdir='./logs/')<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><em>global</em> <strong>gameplot</strong>&nbsp;= &lt;function gameplot&gt;, <strong>user</strong>&nbsp;= 'randomize'</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///var/www/www.tengagedblade.com/cgi-bin/gamestats.py">/var/www/www.tengagedblade.com/cgi-bin/gamestats.py</a> in <strong>gameplot</strong>(user='randomize')</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;61</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;62</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;realgames&nbsp;=&nbsp;allgames.__len__()<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;63</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;realkpg&nbsp;=&nbsp;int(karma)/realgames<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;64</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lm&nbsp;=&nbsp;sns.swarmplot(allgames.type,&nbsp;allgames.placing.astype(int),<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;65</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;order=['casting',&nbsp;'fasting',&nbsp;'rookies',&nbsp;'frooks',&nbsp;'survivor',&nbsp;'hunger',&nbsp;'stars']).set_title(user)<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090">realkpg <em>undefined</em>, <em>builtin</em> <strong>int</strong>&nbsp;= &lt;type 'int'&gt;, <strong>karma</strong>&nbsp;= u'20', <strong>realgames</strong>&nbsp;= 0</font></small></td></tr></table><p><strong>&lt;type 'exceptions.ZeroDivisionError'&gt;</strong>: integer division or modulo by zero
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>args&nbsp;=
+('integer division or modulo by zero',)
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>message&nbsp;=
+'integer division or modulo by zero'
+
+
+<!-- The above is a description of an error in a Python program, formatted
+     for a Web browser because the 'cgitb' module was enabled.  In case you
+     are not reading this in a Web browser, here is the original traceback:
+
+Traceback (most recent call last):
+  File "/var/www/www.tengagedblade.com/cgi-bin/gamestats.py", line 84, in &lt;module&gt;
+    main()
+  File "/var/www/www.tengagedblade.com/cgi-bin/gamestats.py", line 78, in main
+    gameplot(user)
+  File "/var/www/www.tengagedblade.com/cgi-bin/gamestats.py", line 63, in gameplot
+    realkpg = int(karma)/realgames
+ZeroDivisionError: integer division or modulo by zero
+
+-->

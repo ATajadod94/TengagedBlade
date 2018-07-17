@@ -1,0 +1,69 @@
+<body bgcolor="#f0f0f8">
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#6622aa">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>&lt;type 'exceptions.IndexError'&gt;</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial">Python 2.7.13: /usr/bin/python2.7<br>Sat Jul 14 13:49:13 2018</font></td></tr></table>
+    
+<p>A problem occurred in a Python script.  Here is the sequence of
+function calls leading up to the error, in the order they occurred.</p>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///var/www/www.tengagedblade.com/cgi-bin/giftstats.py">/var/www/www.tengagedblade.com/cgi-bin/giftstats.py</a> in <strong><module></strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;63</small>&nbsp;#main()<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;64</small>&nbsp;print&nbsp;"Content-type:&nbsp;text/html\n"<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;65</small>&nbsp;print<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;66</small>&nbsp;main()<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;67</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><strong>main</strong>&nbsp;= &lt;function main&gt;</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///var/www/www.tengagedblade.com/cgi-bin/giftstats.py">/var/www/www.tengagedblade.com/cgi-bin/giftstats.py</a> in <strong>main</strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;57</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;"param1"&nbsp;in&nbsp;form:<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;58</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;user&nbsp;=&nbsp;form["param1"].value<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;59</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;giftplot(user)<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;60</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;61</small>&nbsp;#giftplot('suzycroatia')<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><em>global</em> <strong>giftplot</strong>&nbsp;= &lt;function giftplot&gt;, <strong>user</strong>&nbsp;= 'Suzycroatia'</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///var/www/www.tengagedblade.com/cgi-bin/giftstats.py">/var/www/www.tengagedblade.com/cgi-bin/giftstats.py</a> in <strong>giftplot</strong>(user='Suzycroatia')</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;25</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;html&nbsp;=&nbsp;requests.post('https://tengaged.com/gifts/'&nbsp;+&nbsp;user,&nbsp;{'action':&nbsp;'loadGifts',&nbsp;'p':&nbsp;i})<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;26</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;soup&nbsp;=&nbsp;BeautifulSoup(html.text,&nbsp;'html.parser')<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;27</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gifts&nbsp;=&nbsp;soup.findAll(attrs={'class':&nbsp;'gifts&nbsp;imgMsgList&nbsp;big'})[0]<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;28</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gifters&nbsp;=&nbsp;gifts.findAll(attrs={'class':&nbsp;'message'})<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;29</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;gifter&nbsp;in&nbsp;gifters:<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><strong>gifts</strong>&nbsp;= &lt;ol class="gifts imgMsgList big"&gt;&lt;li&gt;&lt;img src="h...strong&gt;&lt;/div&gt;After all this time?&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;, <strong>soup</strong>&nbsp;= &lt;html&gt;\n&lt;head&gt;&lt;title&gt;503 Service Temporarily Una...&lt;center&gt;nginx/1.12.1&lt;/center&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n, soup.<strong>findAll</strong>&nbsp;= &lt;bound method BeautifulSoup.find_all of &lt;html&gt;\n...center&gt;nginx/1.12.1&lt;/center&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n&gt;, attrs <em>undefined</em></font></small></td></tr></table><p><strong>&lt;type 'exceptions.IndexError'&gt;</strong>: list index out of range
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>args&nbsp;=
+('list index out of range',)
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>message&nbsp;=
+'list index out of range'
+
+
+<!-- The above is a description of an error in a Python program, formatted
+     for a Web browser because the 'cgitb' module was enabled.  In case you
+     are not reading this in a Web browser, here is the original traceback:
+
+Traceback (most recent call last):
+  File "/var/www/www.tengagedblade.com/cgi-bin/giftstats.py", line 66, in &lt;module&gt;
+    main()
+  File "/var/www/www.tengagedblade.com/cgi-bin/giftstats.py", line 59, in main
+    giftplot(user)
+  File "/var/www/www.tengagedblade.com/cgi-bin/giftstats.py", line 27, in giftplot
+    gifts = soup.findAll(attrs={'class': 'gifts imgMsgList big'})[0]
+IndexError: list index out of range
+
+-->

@@ -1,0 +1,116 @@
+<body bgcolor="#f0f0f8">
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#6622aa">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>&lt;type 'exceptions.ValueError'&gt;</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial">Python 2.7.13: /usr/bin/python2.7<br>Sat Jul 14 22:09:57 2018</font></td></tr></table>
+    
+<p>A problem occurred in a Python script.  Here is the sequence of
+function calls leading up to the error, in the order they occurred.</p>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///var/www/www.tengagedblade.com/cgi-bin/giftstats.py">/var/www/www.tengagedblade.com/cgi-bin/giftstats.py</a> in <strong><module></strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;63</small>&nbsp;#main()<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;64</small>&nbsp;print&nbsp;"Content-type:&nbsp;text/html\n"<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;65</small>&nbsp;print<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;66</small>&nbsp;main()<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;67</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><strong>main</strong>&nbsp;= &lt;function main&gt;</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///var/www/www.tengagedblade.com/cgi-bin/giftstats.py">/var/www/www.tengagedblade.com/cgi-bin/giftstats.py</a> in <strong>main</strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;57</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;"param1"&nbsp;in&nbsp;form:<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;58</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;user&nbsp;=&nbsp;form["param1"].value<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;59</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;giftplot(user)<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;60</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;61</small>&nbsp;#giftplot('suzycroatia')<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><em>global</em> <strong>giftplot</strong>&nbsp;= &lt;function giftplot&gt;, <strong>user</strong>&nbsp;= 'Rawrimadino'</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///var/www/www.tengagedblade.com/cgi-bin/giftstats.py">/var/www/www.tengagedblade.com/cgi-bin/giftstats.py</a> in <strong>giftplot</strong>(user='Rawrimadino')</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;46</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top10&nbsp;=&nbsp;gifts_db<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;47</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;48</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;=&nbsp;sns.barplot(top10.user,&nbsp;top10.num_gifts).set_title(user)<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;49</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b&nbsp;=&nbsp;a.axes<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;50</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.set_xticklabels(b.get_xticklabels(),&nbsp;rotation=40,&nbsp;ha="right")<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090">a <em>undefined</em>, <em>global</em> <strong>sns</strong>&nbsp;= &lt;module 'seaborn' from '/usr/local/lib/python2.7/dist-packages/seaborn/__init__.pyc'&gt;, sns.<strong>barplot</strong>&nbsp;= &lt;function barplot&gt;, <strong>top10</strong>&nbsp;= Empty DataFrame
+Columns: [user, num_gifts]
+Index: [], top10.<strong>user</strong>&nbsp;= Series([], Name: user, dtype: object), top10.<strong>num_gifts</strong>&nbsp;= Series([], Name: num_gifts, dtype: int64), ).set_title <em>undefined</em>, <strong>user</strong>&nbsp;= 'Rawrimadino'</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///usr/local/lib/python2.7/dist-packages/seaborn/categorical.py">/usr/local/lib/python2.7/dist-packages/seaborn/categorical.py</a> in <strong>barplot</strong>(x=Series([], Name: user, dtype: object), y=Series([], Name: num_gifts, dtype: int64), hue=None, data=None, order=None, hue_order=None, estimator=&lt;function mean&gt;, ci=95, n_boot=1000, units=None, orient=None, color=None, palette=None, saturation=0.75, errcolor='.26', errwidth=None, capsize=None, dodge=True, ax=None, **kwargs={})</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;2957</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;estimator,&nbsp;ci,&nbsp;n_boot,&nbsp;units,<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;2958</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;orient,&nbsp;color,&nbsp;palette,&nbsp;saturation,<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;2959</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;errcolor,&nbsp;errwidth,&nbsp;capsize,&nbsp;dodge)<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;2960</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;2961</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;ax&nbsp;is&nbsp;None:<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><strong>errcolor</strong>&nbsp;= '.26', <strong>errwidth</strong>&nbsp;= None, <strong>capsize</strong>&nbsp;= None, <strong>dodge</strong>&nbsp;= True</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///usr/local/lib/python2.7/dist-packages/seaborn/categorical.py">/usr/local/lib/python2.7/dist-packages/seaborn/categorical.py</a> in <strong>__init__</strong>(self=&lt;seaborn.categorical._BarPlotter object&gt;, x=Series([], Name: user, dtype: object), y=Series([], Name: num_gifts, dtype: int64), hue=None, data=None, order=None, hue_order=None, estimator=&lt;function mean&gt;, ci=95, n_boot=1000, units=None, orient=None, color=None, palette=None, saturation=0.75, errcolor='.26', errwidth=None, capsize=None, dodge=True)</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;1595</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.establish_variables(x,&nbsp;y,&nbsp;hue,&nbsp;data,&nbsp;orient,<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;1596</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;order,&nbsp;hue_order,&nbsp;units)<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;1597</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.establish_colors(color,&nbsp;palette,&nbsp;saturation)<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;1598</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.estimate_statistic(estimator,&nbsp;ci,&nbsp;n_boot)<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;1599</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><strong>self</strong>&nbsp;= &lt;seaborn.categorical._BarPlotter object&gt;, self.<strong>establish_colors</strong>&nbsp;= &lt;bound method _BarPlotter.establish_colors of &lt;seaborn.categorical._BarPlotter object&gt;&gt;, <strong>color</strong>&nbsp;= None, <strong>palette</strong>&nbsp;= None, <strong>saturation</strong>&nbsp;= 0.75</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///usr/local/lib/python2.7/dist-packages/seaborn/categorical.py">/usr/local/lib/python2.7/dist-packages/seaborn/categorical.py</a> in <strong>establish_colors</strong>(self=&lt;seaborn.categorical._BarPlotter object&gt;, color=None, palette=None, saturation=0.75)</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;309</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Determine&nbsp;the&nbsp;gray&nbsp;color&nbsp;to&nbsp;use&nbsp;for&nbsp;the&nbsp;lines&nbsp;framing&nbsp;the&nbsp;plot<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;310</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;light_vals&nbsp;=&nbsp;[colorsys.rgb_to_hls(*c)[1]&nbsp;for&nbsp;c&nbsp;in&nbsp;rgb_colors]<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;311</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l&nbsp;=&nbsp;min(light_vals)&nbsp;*&nbsp;.6<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;312</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gray&nbsp;=&nbsp;mpl.colors.rgb2hex((l,&nbsp;l,&nbsp;l))<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;313</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090">l <em>undefined</em>, <em>builtin</em> <strong>min</strong>&nbsp;= &lt;built-in function min&gt;, <strong>light_vals</strong>&nbsp;= []</font></small></td></tr></table><p><strong>&lt;type 'exceptions.ValueError'&gt;</strong>: min() arg is an empty sequence
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>args&nbsp;=
+('min() arg is an empty sequence',)
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>message&nbsp;=
+'min() arg is an empty sequence'
+
+
+<!-- The above is a description of an error in a Python program, formatted
+     for a Web browser because the 'cgitb' module was enabled.  In case you
+     are not reading this in a Web browser, here is the original traceback:
+
+Traceback (most recent call last):
+  File "/var/www/www.tengagedblade.com/cgi-bin/giftstats.py", line 66, in &lt;module&gt;
+    main()
+  File "/var/www/www.tengagedblade.com/cgi-bin/giftstats.py", line 59, in main
+    giftplot(user)
+  File "/var/www/www.tengagedblade.com/cgi-bin/giftstats.py", line 48, in giftplot
+    a = sns.barplot(top10.user, top10.num_gifts).set_title(user)
+  File "/usr/local/lib/python2.7/dist-packages/seaborn/categorical.py", line 2959, in barplot
+    errcolor, errwidth, capsize, dodge)
+  File "/usr/local/lib/python2.7/dist-packages/seaborn/categorical.py", line 1597, in __init__
+    self.establish_colors(color, palette, saturation)
+  File "/usr/local/lib/python2.7/dist-packages/seaborn/categorical.py", line 311, in establish_colors
+    l = min(light_vals) * .6
+ValueError: min() arg is an empty sequence
+
+-->

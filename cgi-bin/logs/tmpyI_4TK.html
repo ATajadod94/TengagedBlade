@@ -1,0 +1,69 @@
+<body bgcolor="#f0f0f8">
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#6622aa">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>&lt;type 'exceptions.ZeroDivisionError'&gt;</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial">Python 2.7.13: /usr/bin/python2.7<br>Sat Jul 14 19:59:11 2018</font></td></tr></table>
+    
+<p>A problem occurred in a Python script.  Here is the sequence of
+function calls leading up to the error, in the order they occurred.</p>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///var/www/www.tengagedblade.com/cgi-bin/basestats.py">/var/www/www.tengagedblade.com/cgi-bin/basestats.py</a> in <strong><module></strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;25</small>&nbsp;cgitb.enable(display=0,&nbsp;logdir='./logs/')<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;26</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;27</small>&nbsp;print&nbsp;"Content-type:&nbsp;text/html\n"<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;28</small>&nbsp;print<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;29</small>&nbsp;main()<br>
+</tt></td></tr>
+<tr><td><small><font color="#909090"><strong>main</strong>&nbsp;= &lt;function main&gt;</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///var/www/www.tengagedblade.com/cgi-bin/basestats.py">/var/www/www.tengagedblade.com/cgi-bin/basestats.py</a> in <strong>main</strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;20</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;"param1"&nbsp;in&nbsp;form:<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;21</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;user&nbsp;=&nbsp;form["param1"].value<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;22</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;basestats(user)<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;23</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;24</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><em>global</em> <strong>basestats</strong>&nbsp;= &lt;function basestats&gt;, <strong>user</strong>&nbsp;= 'fuck'</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///var/www/www.tengagedblade.com/cgi-bin/basestats.py">/var/www/www.tengagedblade.com/cgi-bin/basestats.py</a> in <strong>basestats</strong>(user='fuck')</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;14</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;games_played_default&nbsp;=&nbsp;soup.findAll(attrs={'class':&nbsp;'remark'})[1].text;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;15</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;16</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;str(avi),&nbsp;int(karma),&nbsp;int(games_played_default),&nbsp;int(karma)/int(games_played_default)<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;17</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;18</small>&nbsp;def&nbsp;main():<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><em>builtin</em> <strong>str</strong>&nbsp;= &lt;type 'str'&gt;, <strong>avi</strong>&nbsp;= u'https://files.tengaged.com/img_a/def.5.1.jpg', <em>builtin</em> <strong>int</strong>&nbsp;= &lt;type 'int'&gt;, <strong>karma</strong>&nbsp;= u'0', <strong>games_played_default</strong>&nbsp;= u'0'</font></small></td></tr></table><p><strong>&lt;type 'exceptions.ZeroDivisionError'&gt;</strong>: integer division or modulo by zero
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>args&nbsp;=
+('integer division or modulo by zero',)
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>message&nbsp;=
+'integer division or modulo by zero'
+
+
+<!-- The above is a description of an error in a Python program, formatted
+     for a Web browser because the 'cgitb' module was enabled.  In case you
+     are not reading this in a Web browser, here is the original traceback:
+
+Traceback (most recent call last):
+  File "/var/www/www.tengagedblade.com/cgi-bin/basestats.py", line 29, in &lt;module&gt;
+    main()
+  File "/var/www/www.tengagedblade.com/cgi-bin/basestats.py", line 22, in main
+    basestats(user)
+  File "/var/www/www.tengagedblade.com/cgi-bin/basestats.py", line 16, in basestats
+    print str(avi), int(karma), int(games_played_default), int(karma)/int(games_played_default)
+ZeroDivisionError: integer division or modulo by zero
+
+-->

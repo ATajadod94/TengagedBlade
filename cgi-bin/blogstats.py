@@ -54,7 +54,7 @@ def blogplot(user='ak73'):
     p.close()
     blog_links = list()
     for html in page_html:
-        soup = BeautifulSoup(html, "lxml")
+        soup = BeautifulSoup(html.text, "lxml")
         page_blogs = soup.find(attrs={'class': 'blogPosts'})
         blogs = page_blogs.findAll('a')
         for blog in blogs:
@@ -101,7 +101,7 @@ def blogplot(user='ak73'):
     plt.savefig('/var/www/www.tengagedblade.com/blog_data/' + user)
     fig_loc  = 'blog_data/' + user
     num_blogs = num_pages * 6
-    print fig_loc,  120, random.random()
+    print fig_loc,  random.random()*1000  , num_blogs
 
 def gethtml(url, user_agent='tblade' , num_retries = 2):
     headers = {'User-agent': user_agent}
@@ -118,8 +118,8 @@ def main():
         user = form["param1"].value
         blogplot(user)
 cgitb.enable(display=0, logdir='./logs/')
-
+#blogplot('ak73')
 #main()
-blogplot('ak73')
 print "Content-type: text/html\n"
 print
+main()
