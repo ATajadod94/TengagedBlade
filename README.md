@@ -21,9 +21,10 @@ CGI (Common Gateway Interface) through apache. At this time, a database is not b
 * Python 
 * Ajax  (Dom selection is done via js)
 
-# Hosting: 
+# Dev To: 
 * Apache
-* Virtual Linux on Google cloud platform
+* Debian 9
+* Google cloud platforms
 * Google Domains and DNS services
 
 
