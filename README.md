@@ -16,10 +16,12 @@ CGI (Common Gateway Interface) through apache. At this time, a database is not b
 * JS (Vanilla) 
 * CSS 
   * Bootstrap 
+* Ajax  (Dom selection is done via js)
+
 
 # Back end: 
 * Python 
-* Ajax  (Dom selection is done via js)
+* Common Gateway Interface
 
 # Dev To: 
 * Apache
